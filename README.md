@@ -74,14 +74,6 @@ Optional setup for advanced features:
 - Built for macOS as a menu bar app
 - Requires local network access for NDI streaming and receiver communication
 
-## Build From Source
-
-1. Open [`OneScreen.xcodeproj`](OneScreen.xcodeproj) in Xcode.
-2. Build and run the `OneScreen` target.
-3. Install the NDI runtime before testing streaming.
-
-For direct-download distribution and notarized DMG packaging, see [docs/distribution.md](docs/distribution.md).
-
 ## Helpful Links
 
 - [Latest release](https://github.com/spotdgtl/OneScreen/releases/latest)

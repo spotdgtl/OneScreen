@@ -15,9 +15,6 @@ OneScreen streams a selected Mac display to your iPad over your local network. I
 Download the latest version from [GitHub Releases](https://github.com/spotdgtl/OneScreen/releases/latest).
 
 This is a beta release, to request access to a temporary license please email graham@spotdgtl.com
-## Screenshot
-
-![OneScreen menu bar app screenshot](docs/images/onescreen-dropdown.png)
 
 ## About OneScreen
 

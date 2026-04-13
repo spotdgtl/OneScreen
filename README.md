@@ -29,7 +29,7 @@ It also includes session tools like receiver management, intermission modes, hot
 - Connect OneScreen receivers and manage them from the Mac
 - Pause, resume, lock, relaunch, and adjust connected receivers
 - Control supported Capture One actions from an iPad companion
-- Rotate the selected display through BetterDisplay integration
+- Rotate the virtual display within the app
 - Show intermission screens with a title card, logo, text, or solid color
 - Open a preview window while streaming
 - Use hotkeys for pause, intermission, preview, fullscreen, and lock controls

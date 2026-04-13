@@ -20,7 +20,7 @@ This is a beta release, to request access to a temporary license please email gr
 
 OneScreen streams a selected Mac display to your iPad over your local network. It also adds companion controls for supported apps like Capture One.
 
-It also includes session tools like receiver management, intermission modes, hotkeys, preview controls, and has additional integrations for apps such as BetterDisplay.
+It also includes session tools like receiver management, intermission modes, hotkeys, and preview controls
 
 ## Key Features
 
@@ -33,7 +33,7 @@ It also includes session tools like receiver management, intermission modes, hot
 - Show intermission screens with a title card, logo, text, or solid color
 - Open a preview window while streaming
 - Use hotkeys for pause, intermission, preview, fullscreen, and lock controls
-- Enable helper tools like Screen Guard and window bumping for cleaner live sessions
+- Enable helper tools like Cursor Lock for protection against modifying the live stream
 
 ## Trial And Licensing
 
@@ -59,12 +59,6 @@ Required setup:
 - Screen Recording permission
 - NDI runtime installed via [NDI Tools](https://ndi.video/tools/)
 
-Optional setup for advanced features:
-
-- Accessibility permission for window bumping, Screen Guard helpers, and fullscreen window control
-- [BetterDisplay](https://betterdisplay.pro/) for display rotation support
-- Capture One for companion controls
-
 ## Compatibility
 
 - macOS 14.0 or later
@@ -76,5 +70,3 @@ Optional setup for advanced features:
 - [Latest release](https://github.com/spotdgtl/OneScreen/releases/latest)
 - [NDI Tools download](https://ndi.video/tools/)
 - [NDI Tools setup guide](https://docs.ndi.video/all/using-ndi/ndi-tools/ndi-tools-launcher)
-- [BetterDisplay](https://betterdisplay.pro/)
-- [License setup notes](docs/lemon-squeezy-setup.md)

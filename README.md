@@ -1,7 +1,7 @@
 # OneScreen
 
 <p align="center">
-  <img src="branding/onescreen-mark-1024.png" alt="OneScreen icon" width="96" />
+  <img src="docs/images/onescreen-logo.png" alt="OneScreen icon" width="96" />
 </p>
 
 ## OneScreen for macOS

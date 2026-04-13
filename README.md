@@ -6,7 +6,7 @@
 
 ## OneScreen for macOS
 
-OneScreen is a macOS menu bar app that streams a display from your Mac to OneScreen for iPad over your local network using NDI. It also adds private pairing, virtual iPad display workflows, live receiver controls, and optional Capture One companion controls.
+OneScreen is a macOS menu bar app that streams a display from your Mac to OneScreen for iPad over your local network. It also adds private pairing,, live display controls, and optional Capture One companion controls.
 
 [![Download for macOS](https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github)](https://github.com/spotdgtl/OneScreen/releases/latest)
 [![Latest version](https://img.shields.io/github/v/release/spotdgtl/OneScreen?display_name=release&style=for-the-badge)](https://github.com/spotdgtl/OneScreen/releases/latest)
@@ -14,13 +14,11 @@ OneScreen is a macOS menu bar app that streams a display from your Mac to OneScr
 
 Download the latest version from [GitHub Releases](https://github.com/spotdgtl/OneScreen/releases/latest).
 
-OneScreen is currently distributed outside the Mac App Store as a signed, notarized download and includes Sparkle-based in-app updates.
-
 ## Highlights
 
-- Stream any Mac display to OneScreen for iPad over your local network with NDI.
+- Stream any Mac display to OneScreen for iPad over your local network.
 - Create a virtual iPad-sized display on demand instead of mirroring an existing screen.
-- Choose between `Open NDI` discovery or `Private Stream` mode with QR code and manual passphrase pairing.
+- Choose between `Open` discovery or `Private Stream` mode with QR code and manual passphrase pairing.
 - Use live controls for pause, resume, intermission, fullscreen, receiver lock, and supported display rotation.
 - Open a floating Preview Window with keep-on-top, close-on-click, opacity, and Cursor Lock behavior controls.
 - Manage connected receivers from the Mac with rename presets, color labels, brightness, display profile, identify, return-to-live, per-receiver pause, and per-receiver lock.
@@ -29,7 +27,6 @@ OneScreen is currently distributed outside the Mac App Store as a signed, notari
 - Enable automatic display fallback if the selected display disappears while streaming.
 - Assign hotkeys for pause/resume, intermission, preview window, fullscreen, lock/unlock controls, and power save.
 - Add optional Capture One integration for Viewer and Client Viewer targeting plus iPad companion actions like navigation, ratings, color tags, camera controls, capture, Live View, overlay, grid, clear compare, and image rotation.
-- Manage licensing, update checks, and feedback directly inside the app.
 
 ## Trial And Licensing
 

@@ -6,7 +6,7 @@
 
 ## OneScreen for macOS
 
-OneScreen is a macOS menu bar app that streams a display from your Mac to OneScreen for iPad over your local network. It also adds private pairing,, live display controls, and optional Capture One companion controls.
+OneScreen is a macOS menu bar app that streams a display from your Mac to OneScreen for iPad over your local network. It also adds private pairing, live display profile controls, and Capture One Remote Controls through the companion iPad app.
 
 [![Download for macOS](https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github)](https://github.com/spotdgtl/OneScreen/releases/latest)
 [![Latest version](https://img.shields.io/github/v/release/spotdgtl/OneScreen?display_name=release&style=for-the-badge)](https://github.com/spotdgtl/OneScreen/releases/latest)
@@ -17,16 +17,16 @@ Download the latest version from [GitHub Releases](https://github.com/spotdgtl/O
 ## Highlights
 
 - Stream any Mac display to OneScreen for iPad over your local network.
-- Create a virtual iPad-sized display on demand instead of mirroring an existing screen.
-- Choose between `Open` discovery or `Private Stream` mode with QR code and manual passphrase pairing.
-- Use live controls for pause, resume, intermission, fullscreen, receiver lock, and supported display rotation.
-- Open a floating Preview Window with keep-on-top, close-on-click, opacity, and Cursor Lock behavior controls.
-- Manage connected receivers from the Mac with rename presets, color labels, brightness, display profile, identify, return-to-live, per-receiver pause, and per-receiver lock.
-- Toggle `Power Save` to dim connected receivers and restore them later.
+- Create a virtual iPad-sized display on demand instead of having to mirror an existing display.
+- Choose between `Public` or `Private` stream modes with QR code or manual passphrase pairing.
+- Use inline controls to pause, resume, set an intermission, lock, or rotate your display.
+- Open a floating Preview Window to see your virtual display without having to look at the receiver. 
+- Manage connected receivers from the Mac with naming presets, color labels, brightness control, display profiles, ping, and more.
+- Toggle `Power Save` to dim connected receivers or restore them later to save battery life on host receivers.
 - Configure stream bandwidth presets or custom FPS and quality, plus output color space selection.
-- Enable automatic display fallback if the selected display disappears while streaming.
-- Assign hotkeys for pause/resume, intermission, preview window, fullscreen, lock/unlock controls, and power save.
-- Add optional Capture One integration for Viewer and Client Viewer targeting plus iPad companion actions like navigation, ratings, color tags, camera controls, capture, Live View, overlay, grid, clear compare, and image rotation.
+- Enable automatic display fallback if the selected display disappears while streaming or set the stream to terminate.
+- Assign hotkeys for pause/resume, intermission, preview window, fullscreen, lock/unlock controls, and power save features.
+- Add optional Capture One integration for actions like navigation, ratings, color tags, camera controls, capture, Live View, overlay, grid, clear compare, and image rotation.
 
 ## Trial And Licensing
 

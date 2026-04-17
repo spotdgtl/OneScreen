@@ -4,7 +4,7 @@
   <img src="docs/images/onescreen-logo.png" alt="OneScreen icon" width="96" />
 </p>
 
-OneScreen is a macOS menu bar app that streams a display from your Mac to OneScreen for iPad over your local network. It also adds private pairing, live display profile controls, and Capture One Remote Controls through the companion iPad app.
+OneScreen is a macOS menu bar app that streams a display from your Mac to OneScreen for iPad over your local network. It also adds private pairing, live display profile controls, and Capture One Remote Controls.
 
 [![Download for macOS](https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github)](https://github.com/spotdgtl/OneScreen/releases/latest)
 [![Latest version](https://img.shields.io/github/v/release/spotdgtl/OneScreen?display_name=release&style=for-the-badge)](https://github.com/spotdgtl/OneScreen/releases/latest)

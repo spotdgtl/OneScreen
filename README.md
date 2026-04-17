@@ -4,84 +4,78 @@
   <img src="docs/images/onescreen-logo.png" alt="OneScreen icon" width="96" />
 </p>
 
-OneScreen is a macOS menu bar app that streams a display from your Mac to OneScreen for iPad over your local network. It also adds private pairing, live display profile controls, and Capture One Remote Controls.
+OneScreen is a macOS menu bar app that wirelessly streams a Mac display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a secondary monitor or a dedicated client preview for tethered photo shoots. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and deep Capture One integration.
 
-[![Download for macOS](https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github)](https://github.com/spotdgtl/OneScreen/releases/latest)
-[![Latest version](https://img.shields.io/github/v/release/spotdgtl/OneScreen?display_name=release&style=for-the-badge)](https://github.com/spotdgtl/OneScreen/releases/latest)
-[![Platform](https://img.shields.io/badge/macOS-14.0%2B-blue?style=for-the-badge&logo=apple)](https://github.com/spotdgtl/OneScreen/releases/latest)
-
-Download the latest version from [GitHub Releases](https://github.com/spotdgtl/OneScreen/releases/latest).
+[badges...]
 
 ## Highlights
 
-- Stream any Mac display to OneScreen for iPad over your local network.
-- Create a virtual iPad-sized display on demand instead of having to mirror an existing display.
-- Choose between `Public` or `Private` stream modes with QR code or manual passphrase pairing.
-- Use inline controls to pause, resume, set an intermission, lock, or rotate your display.
-- Open a floating Preview Window to see your virtual display without having to look at the receiver. 
-- Manage connected receivers from the Mac with naming presets, color labels, brightness control, display profiles, ping, and more.
-- Toggle `Power Save` to dim connected receivers or restore them later to save battery life on host receivers.
-- Configure stream bandwidth presets or custom FPS and quality, plus output color space selection.
-- Enable automatic display fallback if the selected display disappears while streaming or set the stream to terminate.
-- Assign hotkeys for pause/resume, intermission, preview window, fullscreen, lock/unlock controls, and power save features.
-- Add optional Capture One integration for actions like navigation, ratings, color tags, camera controls, capture, Live View, overlay, grid, clear compare, and image rotation.
+- **Stream any Mac display to an iPad** running OneScreen, over Wi-Fi or Ethernet — no cables required.
+- **Create a virtual, iPad-sized display on demand** so you can stream a dedicated workspace instead of mirroring an existing screen.
+- **Public or Private stream modes**, with QR code or manual passphrase pairing to keep your stream off other receivers on the network.
+- **Inline stream controls** to pause, resume, trigger an intermission screen, lock the receiver, or rotate the display.
+- **Floating Preview window** that mirrors what the iPad is currently showing, so you don't have to look at the receiver to check the output.
+- **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection, and ping/latency stats.
+- **Power Save** dims connected receivers to extend iPad battery life, and restores them on demand.
+- **Bandwidth presets, plus custom FPS, quality, and color space** for tuning the stream to your network.
+- **Automatic display fallback** keeps the stream alive if the source display disconnects — or you can have it terminate cleanly instead.
+- **Global hotkeys** for pause/resume, intermission, preview window, fullscreen, lock/unlock, and Power Save.
+- **Capture One integration** for navigation, ratings, color tags, camera controls, capture, Live View, overlays, grid, clear compare, and image rotation — driven from the Mac and reflected on the iPad.
 
-## Trial And Licensing
+## Trial and Licensing
 
-OneScreen includes a 3-day free trial with full streaming access on each Mac. License activation, validation, revalidation, and removal are handled inside the app in `Settings > License`.
+OneScreen includes a 3-day free trial with full streaming on each Mac. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
 
 ## Requirements
 
 - macOS 14.0 or later
-- OneScreen for iPad on the same local network
-- `NDI Tools` installed on the Mac
-- `Screen Recording` permission enabled for OneScreen
-- Optional: `Accessibility` if you want Cursor Lock or fullscreen window helpers
-- Optional: Capture One if you want companion controls and window targeting
+- OneScreen for iPad, on the same local network as the Mac
+- [NDI Tools](https://ndi.video/tools/) installed on the Mac (provides the NDI runtime)
+- **Screen Recording** permission granted to OneScreen
+- Optional: **Accessibility** permission for Cursor Lock and fullscreen window helpers
+- Optional: Capture One, for companion controls and window targeting
 
 ## Installation
 
 1. Download the [latest release](https://github.com/spotdgtl/OneScreen/releases/latest).
 2. Move `OneScreen.app` to `/Applications`.
-3. Launch OneScreen from `/Applications`, Launchpad, or Spotlight.
+3. Launch it from `/Applications`, Launchpad, or Spotlight.
 4. Complete the first-run setup inside the app.
-5. Grant `Screen Recording` when prompted.
-6. Install [NDI Tools](https://ndi.video/tools/) if the NDI runtime is not already present.
-7. Allow `Local Network` access when macOS asks.
+5. Grant **Screen Recording** when prompted.
+6. Install [NDI Tools](https://ndi.video/tools/) if the NDI runtime isn't already present.
+7. Allow **Local Network** access when macOS asks.
 8. Keep your Mac and iPad on the same network.
 
 ## First-Time Setup
 
-On first launch, OneScreen walks through the required checks before streaming starts:
+On first launch, OneScreen walks you through the required checks before streaming starts:
 
-- `Screen Recording`
-- `NDI Tools`
-- `Local Network`
-- Optional `Accessibility`
+- Screen Recording
+- NDI Tools
+- Local Network
+- Accessibility (optional)
 
-If a setup change still needs a relaunch, OneScreen will tell you inside the app.
+If any change still requires a relaunch, OneScreen will tell you in-app.
 
 ## Typical Workflow
 
 1. Open OneScreen from the macOS menu bar.
-2. Select a display or choose a virtual iPad display preset.
-3. Pick `Open NDI` or `Private Stream`.
-4. Click `Start`.
+2. Select a display, or choose a virtual iPad display preset.
+3. Pick **Open NDI** or **Private Stream**.
+4. Click **Start**.
 5. Join the stream from OneScreen for iPad.
 6. Use preview, intermission, fullscreen, receiver, or Capture One controls as needed.
 
 ## Settings Overview
 
-OneScreen includes dedicated settings for:
-
-- `Stream`: source name, bandwidth mode, output color space, Cursor Lock, and automatic display fallback
-- `Receivers`: receiver name presets, power save, and receiver alerts
-- `Integrations`: Capture One integration and supported companion actions
-- `Preview`: floating preview window behavior
-- `Intermission`: logo plus text, title card, or solid color intermission modes
-- `Hotkeys`: keyboard shortcuts for live controls
-- `Permissions`: Screen Recording, NDI, Accessibility, and Capture One permission status
-- `License`: trial status and license management
+- **Stream** — source name, bandwidth mode, output color space, Cursor Lock, automatic display fallback
+- **Receivers** — name presets, Power Save, receiver alerts
+- **Integrations** — Capture One integration and supported companion actions
+- **Preview** — floating preview window behavior
+- **Intermission** — logo + text, title card, or solid color modes
+- **Hotkeys** — keyboard shortcuts for live controls
+- **Permissions** — Screen Recording, NDI, Accessibility, and Capture One status
+- **License** — trial status and license management
 
 ## Helpful Links
 

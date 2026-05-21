@@ -6,6 +6,14 @@
 
 OneScreen is a macOS menu bar app that wirelessly streams a Mac display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated client preview monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and deep Capture One integration.
 
+## OneScreen for iPad Beta
+
+OneScreen for iPad is currently available as a beta through TestFlight. Open the [public TestFlight link](https://testflight.apple.com/join/ywJPBZS2) on your iPad, install Apple's TestFlight app if prompted, then install OneScreen from TestFlight.
+
+To try the Capture One companion features during the beta, enable `Capture One Controls` inside OneScreen for iPad. The beta uses Apple's sandbox purchase environment, so you may see a purchase confirmation, but no real payment is processed and you will not be charged.
+
+Keep your Mac and iPad on the same local network, then start a stream from OneScreen for macOS and join it from OneScreen for iPad.
+
 ## Highlights
 
 - **Stream any Mac display to an iPad** running OneScreen, over Wi-Fi or Ethernet — no cables required.

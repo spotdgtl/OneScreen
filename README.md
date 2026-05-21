@@ -24,7 +24,7 @@ OneScreen is a macOS menu bar app that wirelessly streams a Mac display to the *
 
 OneScreen includes a 3-day free trial with full streaming on each Mac. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
 
-### OneScreen for iPad Beta
+## OneScreen for iPad Beta
 
 OneScreen for iPad is currently available as a beta through TestFlight. Open the [public TestFlight link](https://testflight.apple.com/join/ywJPBZS2) on your iPad, install Apple's TestFlight app if prompted, then install OneScreen from TestFlight.
 

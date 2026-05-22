@@ -4,7 +4,7 @@
   <img src="docs/images/onescreen-logo.png" alt="OneScreen icon" width="96" />
 </p>
 
-OneScreen is a macOS menu bar app that wirelessly streams a Mac display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated client preview monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and deep Capture One integration.
+OneScreen is a macOS menu bar app that wirelessly streams a Mac display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and deep Capture One integration.
 
 ## Highlights
 

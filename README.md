@@ -46,7 +46,7 @@ OneScreen for iPad is currently available as a beta through TestFlight. The offi
 
 To try the Capture One companion features during the beta, enable `Capture One Controls` inside OneScreen for iPad. The beta uses Apple's sandbox purchase environment, so you may see a purchase confirmation, but no real payment is processed and you will not be charged.
 
-Keep your Mac and iPad on the same local network, then start a stream from OneScreen for macOS and join it from OneScreen for iPad.
+Keep your Mac and iPad on the same local network, then start a stream from OneScreen for Mac and join it from OneScreen for iPad.
 
 ## Requirements
 

@@ -18,21 +18,21 @@
   <a href="docs/privacy.md"><img src="https://img.shields.io/badge/Sentry-crash%20reporting-362d59?style=for-the-badge&logo=sentry&logoColor=white&labelColor=555555" alt="Sentry crash reporting" height="24" /></a>
 </p>
 
-OneScreen is a macOS menu bar app that wirelessly streams a Mac display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and deep Capture One integration.
+OneScreen is a macOS menu bar app that wirelessly streams an existing Mac display or a virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and optional Capture One integration.
 
 ## Highlights
 
-- **Stream any Mac display to an iPad** running OneScreen, over Wi-Fi or Ethernet — no cables required.
 - **Create a virtual, iPad-sized display on demand** so you can stream a dedicated workspace instead of mirroring an existing screen.
+- **Stream an existing Mac display when needed** for manual capture setups or advanced workflows.
 - **Public or Private stream modes**, with QR code or manual passphrase pairing to keep your stream off other receivers on the network.
 - **Inline stream controls** to pause, resume, trigger an intermission screen, lock the receiver, or rotate the display.
 - **Floating Preview window** that mirrors what the iPad is currently showing, so you don't have to look at the receiver to check the output.
-- **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection, and ping/latency stats.
+- **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection, identify, return-to-live, per-receiver pause, and per-receiver lock.
 - **Power Save** dims connected receivers to extend iPad battery life, and restores them on demand.
 - **Bandwidth presets, plus custom FPS, quality, and color space** for tuning the stream to your network.
 - **Automatic display fallback** keeps the stream alive if the source display disconnects — or you can have it terminate cleanly instead.
 - **Global hotkeys** for pause/resume, intermission, preview window, fullscreen, lock/unlock, and Power Save.
-- **Capture One integration** for navigation, ratings, color tags, camera controls, capture, Live View, overlays, grid, clear compare, and image rotation — driven from the Mac and reflected on the iPad.
+- **Capture One integration** for Viewer and Client Viewer targeting, plus iPad companion actions like navigation, ratings, color tags, camera controls, capture, Live View, overlays, grid, clear compare, and image rotation.
 
 ## Trial and Licensing
 
@@ -54,7 +54,7 @@ Keep your Mac and iPad on the same local network, then start a stream from OneSc
 - OneScreen for iPad, on the same local network as the Mac
 - [NDI Tools](https://ndi.video/tools/) installed on the Mac (provides the NDI runtime)
 - **Screen Recording** permission granted to OneScreen
-- Optional: **Accessibility** permission for Cursor Lock and fullscreen window helpers
+- Optional: **Accessibility** permission for Keep Cursor Off Stream and fullscreen window helpers
 - Optional: Capture One, for companion controls and window targeting
 
 ## Installation
@@ -90,9 +90,9 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 
 ## Settings Overview
 
-- **Stream** — source name, bandwidth mode, output color space, Cursor Lock, automatic display fallback
+- **Stream** — stream name, bandwidth mode, output color space, Keep Cursor Off Stream, display visibility, automatic display fallback
 - **Receivers** — name presets, Power Save, receiver alerts
-- **Integrations** — Capture One integration and supported companion actions
+- **Stream Tools** — Capture One integration and supported companion actions
 - **Preview** — floating preview window behavior
 - **Intermission** — logo + text, title card, or solid color modes
 - **Hotkeys** — keyboard shortcuts for live controls
@@ -103,6 +103,7 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 
 - [Latest release](https://github.com/spotdgtl/OneScreen/releases/latest)
 - [User manual](docs/user-manual.md)
+- [Privacy Policy](docs/privacy.md)
 - [NDI Tools download](https://ndi.video/tools/)
 - [NDI Tools setup guide](https://docs.ndi.video/all/using-ndi/ndi-tools/ndi-tools-launcher)
 - [Send feedback](https://www.spotdgtl.com/apps/feedback)

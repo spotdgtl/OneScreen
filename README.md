@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github" alt="Download latest release" /></a>
+  <a href="https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0"><img src="https://img.shields.io/badge/Purchase-early%20license-ff8a00?style=for-the-badge&labelColor=555555" alt="Purchase early license" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/github/v/release/spotdgtl/OneScreen?display_name=release&style=for-the-badge" alt="Latest version" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases"><img src="https://img.shields.io/github/downloads/spotdgtl/OneScreen/total?style=for-the-badge&label=downloads&labelColor=555555&color=1793d1" alt="GitHub release downloads" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/macOS-14.0%2B-1793d1?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="macOS 14.0 or later" /></a>
@@ -35,11 +36,13 @@ OneScreen is a macOS menu bar app that wirelessly streams a Mac display to the *
 
 ## Trial and Licensing
 
-OneScreen includes a 3-day free trial with full streaming on each Mac. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
+OneScreen includes a 3-day free trial with full streaming on each Mac. You can [purchase an early license](https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0) to keep using the Mac app during the beta and support development before the iPad app reaches the App Store.
+
+If you want to test longer before purchasing, email [graham@spotdgtl.com](mailto:graham@spotdgtl.com) for a beta license. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
 
 ## OneScreen for iPad Beta
 
-OneScreen for iPad is currently available as a beta through TestFlight. Open the [public TestFlight link](https://testflight.apple.com/join/ywJPBZS2) on your iPad, install Apple's TestFlight app if prompted, then install OneScreen from TestFlight.
+OneScreen for iPad is currently available as a beta through TestFlight. The official iPad app has not launched on the App Store yet. Open the [public TestFlight link](https://testflight.apple.com/join/ywJPBZS2) on your iPad, install Apple's TestFlight app if prompted, then install OneScreen from TestFlight.
 
 To try the Capture One companion features during the beta, enable `Capture One Controls` inside OneScreen for iPad. The beta uses Apple's sandbox purchase environment, so you may see a purchase confirmation, but no real payment is processed and you will not be charged.
 

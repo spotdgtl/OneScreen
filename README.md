@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github" alt="Download latest release" height="24" /></a>
-  <a href="https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0"><img src="https://img.shields.io/badge/Purchase-early%20license-ff8a00?style=for-the-badge&labelColor=555555" alt="Purchase early license" height="24" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/github/v/release/spotdgtl/OneScreen?display_name=release&style=for-the-badge" alt="Latest version" height="24" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases"><img src="https://img.shields.io/github/downloads/spotdgtl/OneScreen/total?style=for-the-badge&label=downloads&labelColor=555555&color=1793d1" alt="GitHub release downloads" height="24" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/macOS-14.0%2B-1793d1?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="macOS 14.0 or later" height="24" /></a>

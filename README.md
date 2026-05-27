@@ -12,7 +12,6 @@
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/macOS-14.0%2B-1793d1?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="macOS 14.0 or later" height="24" /></a>
   <a href="https://testflight.apple.com/join/ywJPBZS2"><img src="https://img.shields.io/badge/iPad-TestFlight%20beta-0a84ff?style=for-the-badge&logo=appstore&logoColor=white&labelColor=555555" alt="iPad TestFlight beta" height="24" /></a>
   <img src="https://img.shields.io/badge/Swift-5-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=555555" alt="Swift 5" height="24" />
-  <img src="https://img.shields.io/badge/license-proprietary-555555?style=for-the-badge&labelColor=333333" alt="Proprietary commercial software" height="24" />
   <a href="docs/distribution.md"><img src="https://img.shields.io/badge/Apple%20Notarized-%E2%9C%93-4cbb17?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="Apple notarized" height="24" /></a>
   <a href="docs/distribution.md"><img src="https://img.shields.io/badge/Sparkle-updates-4cbb17?style=for-the-badge&labelColor=555555" alt="Sparkle updates enabled" height="24" /></a>
   <a href="docs/privacy.md"><img src="https://img.shields.io/badge/Sentry-crash%20reporting-362d59?style=for-the-badge&logo=sentry&logoColor=white&labelColor=555555" alt="Sentry crash reporting" height="24" /></a>

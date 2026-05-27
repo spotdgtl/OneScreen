@@ -17,7 +17,7 @@
   <a href="docs/privacy.md"><img src="https://img.shields.io/badge/Sentry-crash%20reporting-362d59?style=for-the-badge&logo=sentry&logoColor=white&labelColor=555555" alt="Sentry crash reporting" height="24" /></a>
 </p>
 
-OneScreen is a closed-source commercial macOS menu bar app that wirelessly streams an existing Mac display or a virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and optional Capture One integration.
+OneScreen is a macOS menu bar app that wirelessly streams an existing Mac display or a virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and optional Capture One integration.
 
 ## Highlights
 

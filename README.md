@@ -7,7 +7,6 @@
 <p align="center">
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github" alt="Download latest release" height="24" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/github/v/release/spotdgtl/OneScreen?display_name=release&style=for-the-badge" alt="Latest version" height="24" /></a>
-  <a href="https://github.com/spotdgtl/OneScreen/releases"><img src="https://img.shields.io/github/downloads/spotdgtl/OneScreen/total?style=for-the-badge&label=downloads&labelColor=555555&color=1793d1" alt="GitHub release downloads" height="24" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/macOS-14.0%2B-1793d1?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="macOS 14.0 or later" height="24" /></a>
   <a href="https://testflight.apple.com/join/ywJPBZS2"><img src="https://img.shields.io/badge/iPad-TestFlight%20beta-0a84ff?style=for-the-badge&logo=appstore&logoColor=white&labelColor=555555" alt="iPad TestFlight beta" height="24" /></a>
   <img src="https://img.shields.io/badge/Swift-5-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=555555" alt="Swift 5" height="24" />

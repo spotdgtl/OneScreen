@@ -23,12 +23,12 @@ OneScreen is a Mac app that wirelessly streams an existing display or virtual iP
 - **Public or Private stream modes**, with QR code or manual passphrase pairing to keep your stream off other receivers on the network.
 - **Inline stream controls** to pause, resume, trigger an intermission screen, lock the receiver, or rotate the display.
 - **Floating Preview window** that mirrors what the iPad is currently showing, so you don't have to look at the receiver to check the output.
-- **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection, identify, return-to-live, per-receiver pause, and per-receiver lock.
-- **Power Save** dims connected receivers to extend iPad battery life, and restores them on demand.
-- **Bandwidth presets, plus custom FPS, quality, and color space** for tuning the stream to your network.
+- **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection, framelines control, discovery toggle, return-to-live stream toggle, per-receiver pause, and per-receiver lock.
+- **Power Save** dims all of the connected receivers to extend iPad battery life during down time with the press of a button, and restores them on demand.
+- **Bandwidth presets, plus custom FPS, quality, and color space** easy preset modes and custom tuning options to tweak the stream depending on your network.
 - **Automatic display fallback** keeps the stream alive if the source display disconnects — or you can have it terminate cleanly instead.
 - **Global hotkeys** for pause/resume, intermission, preview window, fullscreen, lock/unlock, and Power Save.
-- **Capture One integration** for Viewer and Client Viewer targeting, plus iPad companion actions like navigation, ratings, color tags, camera controls, capture, Live View, overlays, grid, clear compare, and image rotation.
+- **Capture One Controls integration** iPad companion actions like navigation, ratings, color tags, camera controls, capture button, Live View, overlays, grid, clear compare, and image rotation toggles.
 
 ## Trial and Licensing
 

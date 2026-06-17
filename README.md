@@ -79,10 +79,10 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 
 1. Open OneScreen from the macOS menu bar.
 2. Select a display, or choose a virtual iPad display preset.
-3. Pick **Open NDI** or **Private Stream**.
+3. Leave stream open or choose **Private Stream** by clicking the lock icon.
 4. Click **Start**.
-5. Join the stream from OneScreen for iPad.
-6. Use preview, intermission, fullscreen, receiver, or Capture One controls as needed.
+5. Join the stream from OneScreen for iPad or choose **Private Stream** to pair with the Mac via a QR code or passpha
+6. Begin using your stream or enable **Capture One Controls** in the settings for more control.
 
 ## Settings Overview
 

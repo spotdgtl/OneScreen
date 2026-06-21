@@ -81,7 +81,7 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 2. Select a display, or choose a virtual iPad display preset and select your target window.
 3. Leave stream public (by default) or choose **Private Stream** by clicking the lock icon.
 4. Click **Start**.
-5. One the iPad, join the public stream or choose **Join Private Stream** to pair with the Mac via the private QR code or passphrase.
+5. On the iPad, join the public stream or choose **Join Private Stream** to pair with the Mac via the private QR code or passphrase.
 6. Begin viewing the stream, purchase and enable **Capture One Controls** in the settings for enhanced control over the Capture One app.
 
 ## Settings Overview

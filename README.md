@@ -14,21 +14,23 @@
   <a href="docs/privacy.md"><img src="https://img.shields.io/badge/Sentry-crash%20reporting-362d59?style=for-the-badge&logo=sentry&logoColor=white&labelColor=555555" alt="Sentry crash reporting" height="24" /></a>
 </p>
 
-OneScreen is a Mac app that wirelessly streams an existing display or virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It uses the NDI protocol for low-latency video and adds private pairing, live display controls, and optional Capture One integration.
+OneScreen is a Mac app that wirelessly streams an existing display or virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. Stream over NDI for compatibility with other NDI apps, or use the new built-in HEVC engine (beta) with nothing extra to install — plus private pairing, live display controls, and optional Capture One integration.
 
 ## Highlights
 
 - **Create a virtual, iPad-sized display on demand** so you can stream a dedicated workspace instead of mirroring an existing screen.
 - **Stream an existing Mac display when needed** for manual capture setups or advanced workflows.
+- **Choose your streaming engine** — NDI works with other NDI apps and tools; the built-in HEVC engine (beta) needs nothing installed and streams at an adjustable data rate with adaptive delivery.
 - **Public or Private stream modes**, with QR code or manual passphrase pairing to keep your stream off other receivers on the network.
 - **Inline stream controls** to pause, resume, trigger an intermission screen, lock the receiver, or rotate the display.
 - **Floating Preview window** that mirrors what the iPad is currently showing, so you don't have to look at the receiver to check the output.
 - **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection, framelines control, discovery toggle, return-to-live stream toggle, per-receiver pause, and per-receiver lock.
 - **Power Save** dims all of the connected receivers to extend iPad battery life during down time with the press of a button, and restores them on demand.
-- **Bandwidth presets, plus custom FPS, quality, and color space** easy preset modes and custom tuning options to tweak the stream depending on your network.
+- **Tune the stream to your network** — bandwidth presets with custom FPS, quality, and color space on NDI, or an adjustable data rate on HEVC.
 - **Automatic display fallback** keeps the stream alive if the source display disconnects — or you can have it terminate cleanly instead.
-- **Global hotkeys** for pause/resume, intermission, preview window, fullscreen, lock/unlock, and Power Save.
+- **Global hotkeys** for pause/resume, intermission, preview window, fullscreen, lock controls, Power Save, and framelines.
 - **Capture One Controls integration** iPad companion actions like navigation, ratings, color tags, camera controls, capture button, Live View, overlays, grid, clear compare, and image rotation toggles.
+- **Control Deck** turns the iPad into a control surface beside your primary monitor to rate, tag, and review captures — with a live preview thumbnail and per-shot EXIF and exposure info (part of Capture One Controls).
 
 ## Trial and Licensing
 
@@ -40,7 +42,7 @@ If you want to test longer before purchasing, email [graham@spotdgtl.com](mailto
 
 OneScreen for iPad is currently available as a beta through TestFlight. The official iPad app has not launched on the App Store yet. Open the [public TestFlight link](https://testflight.apple.com/join/ywJPBZS2) on your iPad, install Apple's TestFlight app if prompted, then install OneScreen from TestFlight.
 
-To try the Capture One companion features during the beta, enable `Capture One Controls` inside OneScreen for iPad. The beta uses Apple's sandbox purchase environment, so you may see a purchase confirmation, but no real payment is processed and you will not be charged.
+To try the Capture One companion features during the beta, enable `Capture One Controls` inside OneScreen for iPad. This also unlocks the new **Control Deck**, which turns the iPad into a control surface beside your primary monitor for rating, tagging, and reviewing captures. The beta uses Apple's sandbox purchase environment, so you may see a purchase confirmation, but no real payment is processed and you will not be charged.
 
 Keep your Mac and iPad on the same local network, then start a stream from OneScreen for Mac and join it from OneScreen for iPad.
 
@@ -48,8 +50,8 @@ Keep your Mac and iPad on the same local network, then start a stream from OneSc
 
 - macOS 14.0 or later
 - OneScreen for iPad, on the same local network as the Mac
-- [NDI Tools](https://ndi.video/tools/) installed on the Mac (provides the NDI runtime)
 - **Screen Recording** permission granted to OneScreen
+- NDI engine only: [NDI Tools](https://ndi.video/tools/) installed on the Mac (provides the NDI runtime) — the HEVC engine is built in and needs nothing installed
 - Optional: **Accessibility** permission for Keep Cursor Off Stream and fullscreen window helpers
 - Optional: Capture One, for companion controls and window targeting
 
@@ -60,7 +62,7 @@ Keep your Mac and iPad on the same local network, then start a stream from OneSc
 3. Launch it from `/Applications`, Launchpad, or Spotlight.
 4. Complete the first-run setup inside the app.
 5. Grant **Screen Recording** when prompted.
-6. Install [NDI Tools](https://ndi.video/tools/) if the NDI runtime isn't already present.
+6. Install [NDI Tools](https://ndi.video/tools/) if you'll stream over the NDI engine and the runtime isn't already present (skip this for the HEVC engine).
 7. Allow **Local Network** access when macOS asks.
 8. Keep your Mac and iPad on the same network.
 
@@ -69,7 +71,7 @@ Keep your Mac and iPad on the same local network, then start a stream from OneSc
 On first launch, OneScreen walks you through the required checks before streaming starts:
 
 - Screen Recording
-- NDI Tools
+- NDI Tools (when using the NDI engine)
 - Local Network
 - Accessibility (optional)
 
@@ -86,14 +88,16 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 
 ## Settings Overview
 
-- **Stream** — stream name, bandwidth mode, output color space, Keep Cursor Off Stream, display visibility, automatic display fallback
+- **General** — open at login and Dock icon visibility
+- **Stream** — streaming engine (NDI or HEVC beta), stream name, bandwidth mode or data rate, output color space, Keep Cursor Off Stream, display visibility, automatic display fallback
 - **Receivers** — name presets, Power Save, receiver alerts
-- **Stream Tools** — Capture One integration and supported companion actions
+- **Integrations** — Capture One integration and supported companion actions
 - **Preview** — floating preview window behavior
 - **Intermission** — logo + text, title card, or solid color modes
 - **Hotkeys** — keyboard shortcuts for live controls
 - **Permissions** — Screen Recording, NDI, Accessibility, and Capture One status
 - **License** — trial status and license management
+- **Updates / About / Help** — Sparkle updates, version info, and in-app help
 
 ## Helpful Links
 

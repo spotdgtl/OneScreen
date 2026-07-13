@@ -52,7 +52,7 @@ Keep your Mac and iPad on the same local network, then start a stream from OneSc
 - OneScreen for iPad, on the same local network as the Mac
 - **Screen Recording** permission granted to OneScreen
 - NDI engine only: [NDI Tools](https://ndi.video/tools/) installed on the Mac (provides the NDI runtime) — the HEVC engine is built in and needs nothing installed
-- Optional: **Accessibility** permission for Keep Cursor Off Stream and fullscreen window helpers
+- Optional: **Accessibility** permission for Keep Cursor Off Display and fullscreen window helpers
 - Optional: Capture One, for companion controls and window targeting
 
 ## Installation
@@ -89,7 +89,7 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 ## Settings Overview
 
 - **General** — open at login and Dock icon visibility
-- **Stream** — streaming engine (NDI or HEVC beta), stream name, bandwidth mode or data rate, output color space, Keep Cursor Off Stream, display visibility, automatic display fallback
+- **Stream** — streaming engine (NDI or HEVC beta), stream name, quality presets or data rate, color space, display visibility, automatic display fallback
 - **Receivers** — name presets, Power Save, receiver alerts
 - **Integrations** — Capture One integration and supported companion actions
 - **Preview** — floating preview window behavior

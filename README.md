@@ -1,4 +1,4 @@
-# OneScreen for Mac
+# OneScreen for Mac / iPad
 
 <p align="center">
   <img src="docs/images/onescreen-logo.png" alt="OneScreen icon" width="96" />

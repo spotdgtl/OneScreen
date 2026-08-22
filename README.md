@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Swift-5-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=555555" alt="Swift 5" height="24" />
   <a href="docs/distribution.md"><img src="https://img.shields.io/badge/Apple%20Notarized-%E2%9C%93-4cbb17?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="Apple notarized" height="24" /></a>
 
-OneScreen is a Mac app that wirelessly streams an existing display or virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. Stream over NDI for compatibility with other NDI apps, or use the new built-in HEVC engine (beta) with nothing extra to install — plus private pairing, live display controls, and Capture One integration.
+OneScreen is a Mac app that wirelessly streams an existing display or virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. Stream over NDI for compatibility with other NDI apps, or use the new built-in HEVC engine with nothing extra to install — plus private pairing, live display controls, and Capture One integration.
 
 ## Highlights
 

@@ -22,13 +22,13 @@ When OneScreen for iPad connects, receiver state is exchanged locally with the M
 
 License activation, validation, revalidation, and deactivation may contact Lemon Squeezy and, when configured, OneScreen's entitlement service. The license key, optional checkout email, app bundle ID, app version, and this Mac's license instance ID may be used for those requests.
 
-Update checks may contact Sparkle update feeds and GitHub release endpoints. These requests can include normal web request metadata, such as IP address and user agent.
+Update checks may contact OneScreen's update feed and GitHub release endpoints. These requests can include normal web request metadata, such as IP address and user agent.
 
 The `Contact Support` button in `Settings > Help` is user-triggered. It copies a redacted diagnostic summary to the clipboard and opens the feedback page. The summary can include app version, macOS version, streaming state, selected display summary, receiver summary, permission status, NDI runtime status, license status, last error, and diagnostic log paths. Review the copied text before sending it.
 
 ## Analytics And Crash Reporting
 
-Release builds may include Sentry crash reporting when configured by OneScreen. Crash reports are used to diagnose stability issues and can include stack traces, app version, macOS version, device/runtime metadata, and crash timing. They do not include screen video, screenshots, or OneScreen diagnostic log files. Crash reporting can be turned off in Settings.
+Release builds may include crash reporting when configured by OneScreen. Crash reports are handled for OneScreen by a third-party crash reporting service. They are used to diagnose stability issues and can include stack traces, app version, macOS version, device/runtime metadata, and crash timing. They do not include screen video, screenshots, or OneScreen diagnostic log files. Crash reporting can be turned off in Settings.
 
 The current OneScreen Mac app does not include automatic product analytics.
 

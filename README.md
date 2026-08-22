@@ -102,7 +102,7 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 - **Hotkeys** — keyboard shortcuts for live controls
 - **Permissions** — Screen Recording, Accessibility, NDI, and Capture One status
 - **License** — trial status and license management
-- **Updates / About / Help** — Sparkle updates, version info, support contact, and diagnostics
+- **Updates / About / Help** — automatic and manual update checks, version info, support contact, and diagnostics
 
 ## Helpful Links
 

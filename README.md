@@ -7,6 +7,7 @@
 <p align="center">
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github" alt="Download latest release" height="24" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/macOS-14.0%2B-1793d1?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="macOS 14.0 or later" height="24" /></a>
+  <img src="https://img.shields.io/badge/HEVC-built%20in-1793d1?style=for-the-badge&labelColor=555555" alt="Built-in HEVC streaming engine" height="24" />
   <a href="https://testflight.apple.com/join/ywJPBZS2"><img src="https://img.shields.io/badge/iPad-TestFlight%20beta-0a84ff?style=for-the-badge&logo=appstore&logoColor=white&labelColor=555555" alt="iPad TestFlight beta" height="24" /></a>
   <img src="https://img.shields.io/badge/Swift-5-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=555555" alt="Swift 5" height="24" />
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Apple%20Notarized-%E2%9C%93-4cbb17?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="Apple notarized" height="24" /></a>
@@ -100,7 +101,7 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 - **Preview** — floating preview window behavior and appearance
 - **Intermission** — logo + text, title card, or solid color modes, secondary displays, and a local Test mode
 - **Hotkeys** — keyboard shortcuts for live controls
-- **Permissions** — Screen Recording, Accessibility, NDI, and Capture One status
+- **Permissions** — Screen Recording, Accessibility, optional NDI runtime, and Capture One status
 - **License** — trial status and license management
 - **Updates / About / Help** — automatic and manual update checks, version info, support contact, and diagnostics
 
@@ -109,6 +110,5 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 - [Latest release](https://github.com/spotdgtl/OneScreen/releases/latest)
 - [User manual](docs/user-manual.md)
 - [Privacy Policy](docs/privacy.md)
-- [NDI Tools download](https://ndi.video/tools/)
-- [NDI Tools setup guide](https://docs.ndi.video/all/using-ndi/ndi-tools/ndi-tools-launcher)
+- Optional, NDI engine only: [NDI Tools download](https://ndi.video/tools/) and [setup guide](https://docs.ndi.video/all/using-ndi/ndi-tools/ndi-tools-launcher)
 - [Send feedback](https://www.spotdgtl.com/apps/feedback)

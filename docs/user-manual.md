@@ -386,7 +386,7 @@ Use this tab to:
 
 ### About
 
-App version and developer details, the OneScreen for iPad TestFlight beta link, and attributions.
+App version and developer details, the OneScreen for iPad App Store link with a QR code you can scan with your iPad's camera, and attributions. Click the QR code to show it full screen; click anywhere or press Esc to close it.
 
 ### Help
 

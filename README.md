@@ -8,7 +8,7 @@
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Download-latest%20release-black?style=for-the-badge&logo=github" alt="Download latest release" height="24" /></a>
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/macOS-14.0%2B-1793d1?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="macOS 14.0 or later" height="24" /></a>
   <img src="https://img.shields.io/badge/HEVC-built%20in-1793d1?style=for-the-badge&labelColor=555555" alt="Built-in HEVC streaming engine" height="24" />
-  <a href="https://testflight.apple.com/join/ywJPBZS2"><img src="https://img.shields.io/badge/iPad-TestFlight%20beta-0a84ff?style=for-the-badge&logo=appstore&logoColor=white&labelColor=555555" alt="iPad TestFlight beta" height="24" /></a>
+  <a href="https://apps.apple.com/us/app/onescreen-for-ipad/id6761702167"><img src="https://img.shields.io/badge/iPad-App%20Store-0a84ff?style=for-the-badge&logo=appstore&logoColor=white&labelColor=555555" alt="OneScreen for iPad on the App Store" height="24" /></a>
   <img src="https://img.shields.io/badge/Swift-5-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=555555" alt="Swift 5" height="24" />
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Apple%20Notarized-%E2%9C%93-4cbb17?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="Apple notarized" height="24" /></a>
 
@@ -37,17 +37,17 @@ OneScreen is a Mac app that wirelessly streams an existing display or virtual iP
 
 ## Trial and Licensing
 
-OneScreen includes a 3-day free trial with full streaming on each Mac. You can [purchase an early license](https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0) to keep using the Mac app during the beta and support development before the iPad app reaches the App Store.
+OneScreen includes a 3-day free trial with full streaming on each Mac. You can [purchase an early license](https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0) to keep using the Mac app after the trial and support development.
 
-If you want to test longer before purchasing, email [graham@spotdgtl.com](mailto:graham@spotdgtl.com) for a beta license. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
+If you want to test longer before purchasing, email [graham@spotdgtl.com](mailto:graham@spotdgtl.com) for an extended trial license. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
 
-## OneScreen for iPad Beta
+## OneScreen for iPad
 
-OneScreen for iPad is currently available as a beta through TestFlight. The official iPad app has not launched on the App Store yet. Open the [public TestFlight link](https://testflight.apple.com/join/ywJPBZS2) on your iPad, install Apple's TestFlight app if prompted, then install OneScreen from TestFlight.
+OneScreen for iPad is available on the App Store: [download OneScreen for iPad](https://apps.apple.com/us/app/onescreen-for-ipad/id6761702167) on the iPad you want to stream to. The Mac app's **Settings > About** also shows a QR code you can point the iPad's camera at to open the listing directly.
 
 The iPad app carries the live viewer, a stream dashboard for switching between Macs and streams, framelines, display adjustments, and a draggable connection-quality HUD that shows how the link to the Mac is holding up.
 
-To try the Capture One companion features during the beta, enable `Capture One Controls` inside OneScreen for iPad. This also unlocks the new **Control Deck**, which turns the iPad into a control surface beside your primary monitor for rating, tagging, and reviewing captures. The beta uses Apple's sandbox purchase environment, so you may see a purchase confirmation, but no real payment is processed and you will not be charged.
+To use the Capture One companion features, purchase and enable `Capture One Controls` inside OneScreen for iPad. This also unlocks the **Control Deck**, which turns the iPad into a control surface beside your primary monitor for rating, tagging, and reviewing captures.
 
 Keep your Mac and iPad on the same local network, then start a stream from OneScreen for Mac and join it from OneScreen for iPad.
 

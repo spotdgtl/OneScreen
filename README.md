@@ -37,7 +37,7 @@ OneScreen is a Mac app that wirelessly streams an existing display or virtual iP
 
 ## Trial and Licensing
 
-OneScreen includes a 3-day free trial with full streaming on each Mac. You can [purchase an early license](https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0) to keep using the Mac app after the trial and support development.
+OneScreen includes a 3-day free trial with full streaming on each Mac. You can [purchase a license](https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0) to keep using the Mac app after the trial.
 
 If you want to test longer before purchasing, email [graham@spotdgtl.com](mailto:graham@spotdgtl.com) for an extended trial license. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
 

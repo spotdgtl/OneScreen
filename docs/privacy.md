@@ -1,10 +1,12 @@
-# OneScreen Privacy & Network Notes
+# OneScreen Privacy Policy
 
-OneScreen is built for local display streaming. This note explains what the Mac app needs access to and what can leave the Mac during normal use.
+Last updated: September 2, 2026
+
+OneScreen is built for local display streaming. This page explains what the Mac app needs access to and what can leave the Mac during normal use.
 
 ## Local Streaming
 
-OneScreen captures the display you choose only while streaming or previewing. The live video stream is sent over your local network using the selected streaming engine — HEVC by default, or NDI — so receivers, such as OneScreen for iPad, can view it.
+OneScreen captures the display you choose only while streaming or previewing. The live video stream is sent over your local network using the streaming engine you choose — the built-in HEVC engine by default, or NDI — so receivers, such as OneScreen for iPad, can view it.
 
 OneScreen does not upload your live video stream to Spot Digital servers.
 
@@ -24,7 +26,7 @@ License activation, validation, revalidation, and deactivation may contact Lemon
 
 Update checks may contact OneScreen's update feed and GitHub release endpoints. These requests can include normal web request metadata, such as IP address and user agent.
 
-The `Contact Support` button in `Settings > Help` is user-triggered. It copies a redacted diagnostic summary to the clipboard and opens the feedback page. The summary can include app version, macOS version, streaming state, selected display summary, receiver summary, permission status, NDI runtime status, license status, last error, and diagnostic log paths. Review the copied text before sending it.
+The `Contact Support` button in `Settings > Help` is user-triggered. It copies a redacted diagnostic summary to the clipboard and opens the feedback page. The summary can include app version, macOS version, streaming and paused state, connected receiver app versions, permission status, NDI runtime status, license and trial status, last error, and diagnostic log paths. Display names, receiver names, your home folder path, email addresses, and license keys are redacted before the summary is copied. Review the copied text before sending it.
 
 ## Analytics And Crash Reporting
 
@@ -35,6 +37,6 @@ The current OneScreen Mac app does not include automatic product analytics.
 ## Permissions
 
 - `Screen Recording`: lets OneScreen capture the selected display for preview and streaming.
-- `Local Network`: lets OneScreen publish and discover local receivers and streams.
+- `Local Network`: lets OneScreen publish and discover local receivers and streams over either engine.
 - `Apple Events`: lets OneScreen send Capture One commands when companion controls are enabled.
-- `Accessibility`: optional; used for Keep Cursor Off Display, full screen helpers, and window placement.
+- `Accessibility`: optional; used for Keep Cursor Off Display and full screen/window-targeting helpers.

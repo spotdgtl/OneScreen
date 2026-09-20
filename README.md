@@ -16,7 +16,7 @@ OneScreen is a Mac app that wirelessly streams an existing display or virtual iP
 
 ## Highlights
 
-- **Create a virtual, iPad-sized display on demand** so you can stream a dedicated workspace instead of mirroring an existing screen — portrait or landscape, Retina or actual size, placed on the side of the desktop you choose.
+- **Create a virtual, iPad-sized display on demand** so you can stream a dedicated workspace instead of mirroring an existing screen — portrait or landscape, placed on the side of the desktop you choose.
 - **Stream an existing Mac display when needed** for manual capture setups or advanced workflows.
 - **Choose your streaming engine** — the built-in HEVC engine is the default, needs nothing installed, and streams at a data rate you set; NDI works with other NDI apps and tools. Each engine remembers its own quality settings.
 - **Open or Private stream modes**, with QR code or manual passcode pairing to keep your stream off other receivers on the network. Over HEVC, private sessions also encrypt the video on the wire.
@@ -28,7 +28,7 @@ OneScreen is a Mac app that wirelessly streams an existing display or virtual iP
 - **One-click exits from anything holding the stream**, with banners for Capture One Live View and iPad review mode.
 - **Power Save** dims all of the connected receivers to extend iPad battery life during down time with the press of a button, and restores them on demand.
 - **Tune the stream to your network** — quality presets, or a custom stream size, frame rate, 20–120 Mbps data rate, 8-bit or 10-bit depth, and output color space, with a Stream Info strip that always shows exactly what is being sent.
-- **Intermission cards** built from a logo plus text, a title card image, or a solid color, optionally mirrored to every secondary display, with a local Test mode for checking the card before a shoot.
+- **Intermission cards** built from a logo plus text, a title card image, or a solid color, with animated GIF logos and title cards playing on every receiver, optionally mirrored to every secondary display and to the main display with the menu bar kept on top, with a local Test mode for checking the card before a shoot.
 - **Automatic display fallback** keeps the stream alive if the source display disconnects — or you can have it terminate cleanly instead.
 - **Your Mac stays awake** for as long as a stream is running, so it can't idle-sleep mid-session and drop every receiver at once.
 - **Global hotkeys** for pause/resume, intermission, preview window, full screen, lock controls, Power Save, framelines, and recalling the mouse pointer to the main display.
@@ -95,11 +95,11 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 ## Settings Overview
 
 - **General** — open at login and Dock icon visibility
-- **Stream** — streaming engine (HEVC or NDI), stream name, quality presets or custom size, frame rate, data rate and bit depth, color space, auto-start and auto-switch behavior, and virtual iPad display scale, placement, orientation, and stray-window handling
+- **Stream** — streaming engine (HEVC or NDI), stream name, quality presets or custom size, frame rate, data rate and bit depth, color space, auto-start and auto-switch behavior, and virtual iPad display placement, orientation, and stray-window handling
 - **Receivers** — name presets, iPad viewer controls, Power Save, battery and connection-quality readouts, receiver alerts
 - **Integrations** — Capture One integration and supported companion actions
 - **Preview** — floating preview window behavior and appearance
-- **Intermission** — logo + text, title card, or solid color modes, secondary displays, and a local Test mode
+- **Intermission** — logo + text, title card, or solid color modes, animated GIFs, main and secondary displays, and a local Test mode
 - **Hotkeys** — keyboard shortcuts for live controls
 - **Permissions** — Screen Recording, Accessibility, optional NDI runtime, and Capture One status
 - **License** — trial status and license management

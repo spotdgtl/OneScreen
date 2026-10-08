@@ -72,7 +72,7 @@ If OneScreen shows a red warning instead of a Start button, fix that warning fir
 ## 4. Choose What to Stream
 
 1. Open the picker in the `Choose a display to stream` area.
-2. Choose a preset under `Virtual iPad Display` so OneScreen can create a virtual display when streaming starts, or choose a current Mac display under `Existing Displays`.
+2. Choose a preset under `Create a Virtual Display` so OneScreen can create a virtual display when streaming starts, or choose a current Mac display under `Use an Existing Display`.
 3. Each iPad preset opens a submenu. Choose what should appear on the virtual display:
    - Under `Choose a Window`, pick `Capture One Viewer`, a `Client Viewer`, or `Current App Window` to put a window there.
    - Under `Or Leave It Empty`, pick `Empty Display` to create the virtual display without moving a window onto it.
@@ -80,7 +80,9 @@ If OneScreen shows a red warning instead of a Start button, fix that warning fir
 
 ### When to use an existing Mac display
 
-Use the virtual display workflow when you want the iPad to behave like a dedicated presentation output. If you need to stream one of your current Mac displays instead, choose it from the `Existing Displays` section at the bottom of the display picker.
+Use the virtual display workflow when you want the iPad to behave like a dedicated presentation output. If you need to stream one of your current Mac displays instead, choose it from the `Use an Existing Display` section at the bottom of the display picker.
+
+A display that is mirroring another one is listed last, marked `(Mirrored Display)`, and cannot be chosen — it shows another display's picture rather than one of its own. Stream the display it mirrors instead, which stays selectable.
 
 ## 5. Choose Open or Private Streaming
 
@@ -126,7 +128,7 @@ While streaming, the panel can show live status such as:
 
 Over HEVC the status pill also shows the measured send rate for the live stream.
 
-OneScreen holds the Mac awake for as long as a stream is running, so the machine will not idle-sleep mid-session and drop every receiver at once. Display sleep still follows your own schedule, and an explicit sleep — closing the lid, or the Apple menu — still wins.
+OneScreen holds the Mac awake for as long as a stream is running, so the machine will not idle-sleep mid-session and drop every receiver at once. With `Keep Screen Awake` on (the default), the screen also stays awake while an iPad is watching: macOS stops the capture the moment the screen sleeps, so a stream whose screen has gone dark can send only the intermission card until it wakes. An explicit sleep — closing the lid, a hot corner, or the Apple menu — still wins; the stream then holds on the intermission card and the picture returns when the Mac or its screen wakes.
 
 If you need to change the selected display, streaming engine, quality, or color space, stop the stream first, make the change, then start again. Those settings lock while a stream is live and the Stream tab shows a banner explaining why.
 
@@ -143,7 +145,7 @@ If the Mac sees viewers but not full OneScreen receivers, the panel may show unk
 
 ## 8. Use the Live Controls During a Stream
 
-The preview area gives you the main live controls for the current stream. When `Show Hotkeys on Buttons` is on, each button also shows its assigned shortcut.
+The preview area gives you the main live controls for the current stream. When `Show Shortcuts on Buttons` is on, each button also shows its assigned shortcut.
 
 ### Pause and Resume
 
@@ -237,10 +239,12 @@ The button fills with the accent color while Power Save is on.
 
 ### Activity banners
 
-When something on an iPad is holding the stream, a banner appears above the receiver list with a one-click way out:
+When something on an iPad is holding the stream, a banner appears above the receiver list with a red button that ends it in one click:
 
-- `Capture One Live View is on` offers `Turn Off`.
+- `Live View is active on iPad` offers `Turn Off`, which turns off Live View in Capture One.
 - `Review mode is active` offers `Stop`, which ends the review sweep on every reviewing receiver.
+
+You don't have to open the menu to find out. When either one switches on while the menu is closed, the same banner drops from the OneScreen icon in the menu bar of the display the pointer is on. It stays until the mode ends, you click its button, you close it, or you open the menu, and it never takes focus from the app you are working in. While the Receivers window is open, its banners do the same job, so nothing drops from the menu bar. To stop the popup altogether, switch off `Review Mode or Live View Turns On` in `Settings > Receivers > Notifications`.
 
 ## 10. Pop the Receivers List Into Its Own Window
 
@@ -248,10 +252,11 @@ On a busy set the menu bar panel closes every time you click elsewhere. You can 
 
 1. Click the pop-out button in the `Receivers` header (`Open Receivers in a floating window`).
 2. The window carries the same receiver rows, the same activity banners, and a compact stream action strip with `Pause` / `Resume`, `Intermission` / `Go Live`, and `Lock` / `Unlock`.
-3. Use the gear in the window's header to open `Window Options` and turn `Always on Top` on or off.
-4. Click the close button to put the receivers back in the menu bar panel.
+3. Click the close button to put the receivers back in the menu bar panel.
 
-The window sizes itself to its list, and the intermission card is kept off the display the Receivers window is on so the window stays usable during an intermission.
+The window always stays on top of your other windows and sizes itself to its list. The intermission card is kept off the display the Receivers window is on so the window stays usable during an intermission.
+
+The window opens on the display whose menu bar you opened it from. If you last left it on another display, it keeps its place on the screen: leave it in the top-right corner of one display and it opens in the top-right corner of the next. If the window is already open on another display, clicking the pop-out button moves it to the display you clicked from.
 
 ## 11. Open the Floating Preview Window
 
@@ -264,9 +269,22 @@ You can open the floating Preview Window in either of these ways:
 
 The floating Preview Window can be configured to stay on top, close when clicked, pause the stream while it is open, and temporarily suspend Keep Cursor Off Display while it is open.
 
+### Point the Preview Window at Any Display
+
+When more than one display is attached, a display picker sits in the Preview Window's top-left corner. Use it to watch any display attached to this Mac — including one you have no direct sight of — while the stream carries on unchanged.
+
+- The picker starts on the display you are streaming. Rows are marked `(Streaming)` only while a stream is actually running.
+- Choose another display and its picture appears within a second or two. The location badge opposite the picker turns to match, and the window retakes the shape of the display you chose.
+- Point it at the display the Preview Window itself is sitting on and you see the desktop underneath, not a recursion of preview windows.
+- At rest the picker rests as a single icon. Move the pointer onto it to read the display's name in full.
+- Clicking the picker does not close the window, even with `Click to Close` on.
+- The choice lasts as long as the window. Close and reopen the Preview Window and it is back on the streamed display; unplug the display you were watching and it returns to the stream on its own.
+
+The picker only appears when there is somewhere else to look — on a single-display Mac there is nothing to choose. Turn it off with `Display Picker` in `Settings > Preview`, which also returns the window to the streamed display.
+
 ## 12. Walk Through the Settings Tabs
 
-Open Settings from the gear button in the footer. The sidebar lists nine main tabs — General, Stream, Receivers, Integrations, Preview, Intermission, Hotkeys, Permissions, and License — plus Updates, About, and Help below them.
+Open Settings from the gear button in the footer. The sidebar lists nine main tabs — General, Stream, Receivers, Integrations, Preview, Intermission, Shortcuts, Permissions, and License — plus Updates, About, and Help below them.
 
 ### General
 
@@ -280,16 +298,15 @@ App-level behavior:
 Everything about the stream itself. While a stream is live these settings lock, and a banner explains that; stop the stream to edit them.
 
 - `Stream Name`: the name iPads see. Applies next time streaming starts.
-- `Streaming Engine`: HEVC or NDI, independent of quality. HEVC is the default, is built into macOS with nothing to install, and streams at a fixed data rate. NDI works with other NDI apps and requires NDI Tools. Each engine remembers its own quality selection.
+- `Streaming Engine`: HEVC or NDI, independent of quality. HEVC is the default, is built into macOS with nothing to install, and streams at a fixed data rate. NDI works with other NDI apps and requires the NDI Runtime, which comes with NDI Tools. Each engine remembers its own quality selection.
 - `Quality`: Maximum, High, Balanced, Limited Network, or Custom. The caption under the menu shows the exact size, frame rate, and (for HEVC) data rate.
 - `Advanced`: `Stream Size` is a percentage of the streamed display (200 / 150 / 100 / 75 / 66 / 50 / 33%, with 150% and 200% offered only for a virtual iPad display, where they create real extra HiDPI pixels for clearer zooming); `Frame Rate` picks exact fps (60 / 30 / 20 / 15 / 10 / 8 / 5); HEVC adds a 20–120 Mbps `Data Rate` slider and an 8-bit/10-bit `Bit Depth` preference. Editing any of these sets Quality to Custom.
-- `Color Space`: Capture Default, Standard sRGB, Adobe RGB (1998), Display P3, or ITU-R BT.709. A previously saved space outside this list stays selectable until changed.
+- `Color Space`: Standard sRGB, Display P3 (the default), or ITU-R BT.709. NDI also offers Adobe RGB (1998); switching to HEVC with it selected changes the space to Display P3. A previously saved space outside this list stays selectable until changed where the engine supports it, and is otherwise replaced by Display P3.
 - `Stream Info`: the strip at the foot of the card showing exactly what will be sent — size, fps, engine, data rate, and bit depth (NDI reports `auto rate · 8-bit`). A green dot pulses while live.
-- `Streaming Behavior`: `Auto-Start Stream` (with `Use Private Stream` pairing), and `Auto-Switch Displays` if the streamed display disappears.
+- `Streaming Behavior`: `Auto-Start Stream` (with `Use Private Stream` pairing), `Auto-Switch Displays` if the streamed display disappears, and `Keep Screen Awake`, which stops the screen sleeping on its own while an iPad is watching.
 - `Virtual iPad Display`:
-  - `Scale` chooses Retina (HiDPI) or Actual Size for virtual displays.
   - `Default Display Placement` chooses which side of the desktop a new virtual display is created on.
-  - `Start Stream in Vertical Orientation` creates the virtual iPad display in portrait when the stream starts.
+  - `Create Virtual Display in Portrait` creates the virtual iPad display in portrait when the stream starts.
   - `Keep Other Windows off the Display` moves stray windows that land on the virtual display back to the main display.
 
 ### Receivers
@@ -301,14 +318,19 @@ Use this tab to shape the iPad experience:
 - Enable and tune `Power Save`
 - `Battery Display` shows each receiver's battery as an icon, as a percentage, or not at all
 - `Connection Quality` shows each iPad's signal strength and live data rate in the receivers list while streaming
-- Turn `Battery Low or Not Charging`, `Receiver Goes Offline`, and `Stream Tries to Recover` on or off
+- `Enable Notifications` turns every receiver alert and the menu bar popup on or off at once. Switching it off also closes any popup alerts on screen; the settings under it are hidden while it is off and keep their choices for when you turn it back on
+- Turn `Battery Low or Not Charging`, `iPad Goes Offline`, and `Stream Drops Out` on or off (all three start on) — `Stream Drops Out` also announces when the receiver reconnects
+- `Alert Style` chooses how those alerts appear: `Popup` (the default) shows a floating OneScreen window — no notification permission needed, and it appears even over full-screen apps — while `Notification` uses macOS notifications
+- `Auto-Dismiss` (shown for the Popup style) lets popup alerts time out on their own, after 10 seconds unless you change it — `Never` keeps them up until you dismiss them
+- `Review Mode or Live View Turns On` controls the popup that drops from the menu bar icon when an iPad's review mode or Capture One Live View turns on during a stream (see Activity banners). It is on until you switch it off, and the banners in the menu and the Receivers window stay either way
 
 ### Integrations
 
 Use this tab for optional Mac-side integrations:
 
 - Turn `Capture One Controls` on or off
-- Decide which controls are allowed from iPad, under `Selection and Camera Controls` (Navigation, Ratings, Color Tags, Camera Controls, AirDrop, Live View) and `Toolbar Buttons` (Clear Compare, Before/After, Overlay, Grid, Guides, Rotate Left, Rotate Right)
+- Decide which controls are allowed from iPad, under `Selection and Camera Controls` (Navigation, Ratings, Color Tags, Camera Controls, AirDrop, Live View) and `Toolbar Buttons` (Clear Compare, Before/After, Overlay, Grid, Guides, Rotate Left, Rotate Right, Proof Margin, Viewer Background)
+- `Proof Margin` and `Viewer Background` put two Capture One viewer tools in the toolbar at the top of the iPad's live viewer: a switch for Capture One's proof margin, and a menu of Capture One's six viewer background colors. Both appear on the iPad while the stream shows the Capture One Viewer or a Client Viewer: a Client Viewer shows whatever the main Capture One window's viewer is showing, so a press changes the picture either way. Each iPad can also hide either one in its own `Capture One Controls` settings
 - Review or change the Capture One target app bundle
 
 ### Preview
@@ -321,11 +343,12 @@ Use this tab to tune the floating Preview Window.
 - `Pause Keep Cursor Off Display While Open`
 - `Pause Stream While Open`
 - `Click to Close`
-- `Warn if Keep Window Full Screen is on`
+- `Warn if Keep Window Full Screen Is On`
 
 `Appearance`:
 
 - `Opacity`
+- `Display Picker`
 - `Display Location Badge`
 
 ### Intermission
@@ -333,23 +356,44 @@ Use this tab to tune the floating Preview Window.
 Use this tab to build the card shown during intermission:
 
 - `Mode`: `Logo + Text`, `Title Card Image`, or `Solid Color`
-- `Secondary Displays`: also show the card full screen on every connected display except the main display
+- `Show on Additional Displays`: also show the card full screen on every display other than the main display, the one with the menu bar
+- `Show on Main Display`: also show the card full screen on the main display. The two settings work independently, and on every covered display the menu bar stays on top of the card, so the OneScreen menu and its `Go Live` button stay within reach. When OneScreen starts the intermission by itself, because Capture One quit during a stream or the Mac went to sleep, the card stays off the main display whatever this setting says, so you can get straight back to work; your iPads and the other displays still show it
 - Logo placement, scale, colors, title, subtitle, and preview
+
+Double-click a card to dismiss it on that display for the rest of that
+intermission. The other displays keep theirs, and it returns with the next
+intermission. The card on the main display says so in a small pill near the
+bottom. Opening Settings from the OneScreen menu dismisses a card too: the one
+on the display you opened it from, which is where Settings appears, so
+Settings never opens underneath a card and no other display loses its own.
+Two kinds of display keep their card whatever you click: a display that is
+being mirrored, because it shares its picture with another display, and the
+virtual display, which has no screen of its own. Open Settings from one of
+those and it appears on the main display instead, dismissing the card there.
+
+An animated GIF works as the title card and as the logo. It plays in the
+Settings preview, on every receiver, on the secondary displays, and in the
+test, looping for as long as the card is up, and it keeps the encoder busy the
+way live streaming does.
+
+
 
 Click `Test` beside the preview to check the card at full size before a shoot. The
 test covers every display except the one you are working on, so your main screen
-stays usable, and the button becomes `End Test` while it is showing. On a
-single-display Mac the test takes over the current screen instead and ends on any
-click or key press.
+stays usable, and the button becomes `End Test` while it is showing. With `Show on
+Main Display` on, the test covers the main display too, below the menu bar just
+like the real card, and ends on any click or key press. On a single-display Mac
+with nothing else to cover, the test takes over the current screen instead and
+ends the same way.
 
 The test is local to your Mac. It never touches the stream, your receivers, or a
 real intermission already in progress, and it is excluded from capture so it
 cannot appear in a running stream. It clears itself automatically if you leave it
 up, and it stays disabled until you have configured a card.
 
-### Hotkeys
+### Shortcuts
 
-`Show Hotkeys on Buttons` puts each shortcut on its menu bar control button.
+`Show Shortcuts on Buttons` puts each shortcut on its menu bar control button.
 
 Assign keyboard shortcuts for:
 
@@ -360,7 +404,7 @@ Assign keyboard shortcuts for:
 - Lock Controls
 - Power Save
 - Framelines
-- Recall Mouse Pointer to Main Display
+- Recall Cursor to Main Display
 
 ### Permissions
 
@@ -392,9 +436,9 @@ App version and developer details, the OneScreen for iPad App Store link with a 
 
 - `Contact Support` opens the support form and copies a redacted app summary to your clipboard
 - `Crash Reports` turns optional crash reporting on or off
-- `Detailed Diagnostic Logging` records extra stream and display detail for support; it takes effect after a relaunch
+- `Detailed Diagnostic Logging` records extra stream and display detail for support; it takes effect after a relaunch and turns itself off after 3 days
 - `Diagnostic Logs` exports a local zip of logs if support asks for one
-- `User Manual`, `Privacy Policy`, and `NDI Tools` links
+- `User Manual`, `Privacy Policy`, `NDI Runtime`, and `Capture One` links
 - Shortcuts back to the `Permissions` and `License` tabs
 
 ## 13. Update, Get Help, or Quit
@@ -454,7 +498,7 @@ Open the QR code panel again and click `Refresh`. Private pairing codes expire q
 
 Grant `Accessibility` first. This is separate from Capture One Automation. Depending on your macOS setup, you may also be prompted later for Input Monitoring or pointer-control related permissions.
 
-When Keep Cursor Off Display is on, OneScreen also runs an automatic backup recovery path — there is nothing to configure. If macOS still reports the pointer on the streamed display, the Preview Window is closed, and there has been no mouse activity for five seconds, OneScreen moves the pointer to the center of the main display by itself. To bring the pointer back on demand at any time, assign the `Recall Mouse Pointer to Main Display` hotkey.
+When Keep Cursor Off Display is on, OneScreen also runs an automatic backup recovery path — there is nothing to configure. If macOS still reports the pointer on the streamed display, the Preview Window is closed, and there has been no mouse activity for five seconds, OneScreen moves the pointer to the center of the main display by itself. To bring the pointer back on demand at any time, assign the `Recall Cursor to Main Display` shortcut.
 
 ### An iPad shows weak signal or a stuttering picture
 

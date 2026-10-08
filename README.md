@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Swift-5-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=555555" alt="Swift 5" height="24" />
   <a href="https://github.com/spotdgtl/OneScreen/releases/latest"><img src="https://img.shields.io/badge/Apple%20Notarized-%E2%9C%93-4cbb17?style=for-the-badge&logo=apple&logoColor=white&labelColor=555555" alt="Apple notarized" height="24" /></a>
 
-OneScreen is a Mac app that wirelessly streams an existing display or virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It streams over the built-in HEVC engine by default — nothing extra to install — or over NDI when you need compatibility with other NDI apps, plus private pairing, live display controls, and Capture One integration.
+OneScreen is a Mac app that streams an existing display or virtual iPad-sized display to the **OneScreen for iPad** companion app over your local network, turning any iPad into a dedicated viewing monitor. It streams over the built-in HEVC engine by default — nothing extra to install — or over NDI when you need compatibility with other NDI apps, plus private pairing, live display controls, and Capture One integration.
 
 ## Highlights
 
@@ -25,13 +25,13 @@ OneScreen is a Mac app that wirelessly streams an existing display or virtual iP
 - **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection and profile sync, framelines control, identify, return-to-live, per-receiver pause, and per-receiver lock.
 - **See how every iPad is actually doing** — signal strength and live data rate per receiver, plus battery, right in the receivers list.
 - **Pop the receivers list into a floating window** that stays on top and carries its own pause, intermission, and lock controls, so you can work away from the menu bar.
-- **One-click exits from anything holding the stream**, with banners for Capture One Live View and iPad review mode.
+- **One-click exits from anything holding the stream**, with banners for Capture One Live View and iPad review mode that drop from the menu bar icon, so you don't need the menu open.
 - **Power Save** dims all of the connected receivers to extend iPad battery life during down time with the press of a button, and restores them on demand.
 - **Tune the stream to your network** — quality presets, or a custom stream size, frame rate, 20–120 Mbps data rate, 8-bit or 10-bit depth, and output color space, with a Stream Info strip that always shows exactly what is being sent.
 - **Intermission cards** built from a logo plus text, a title card image, or a solid color, with animated GIF logos and title cards playing on every receiver, optionally mirrored to every secondary display and to the main display with the menu bar kept on top, with a local Test mode for checking the card before a shoot.
 - **Automatic display fallback** keeps the stream alive if the source display disconnects — or you can have it terminate cleanly instead.
-- **Your Mac stays awake** for as long as a stream is running, so it can't idle-sleep mid-session and drop every receiver at once.
-- **Global hotkeys** for pause/resume, intermission, preview window, full screen, lock controls, Power Save, framelines, and recalling the mouse pointer to the main display.
+- **Your Mac stays awake** for as long as a stream is running, so it can't idle-sleep mid-session and drop every receiver at once — and the screen stays awake while an iPad is watching. If the Mac sleeps anyway, the iPads hold on the intermission card until it wakes.
+- **Global shortcuts** for pause/resume, intermission, preview window, full screen, lock controls, Power Save, framelines, and recalling the cursor to the main display.
 - **Capture One Controls integration** iPad companion actions like navigation, ratings, color tags, camera controls, capture button, AirDrop, Live View, overlays, grid, guides, clear compare, and image rotation toggles.
 - **Control Deck** turns the iPad into a control surface beside your primary monitor to rate, tag, and review captures — with a live preview thumbnail and per-shot EXIF and exposure info (part of Capture One Controls).
 
@@ -49,12 +49,12 @@ The iPad app carries the live viewer, a stream dashboard for switching between M
 
 To use the Capture One companion features, purchase and enable `Capture One Controls` inside OneScreen for iPad. This also unlocks the **Control Deck**, which turns the iPad into a control surface beside your primary monitor for rating, tagging, and reviewing captures.
 
-Keep your Mac and iPad on the same local network, then start a stream from OneScreen for Mac and join it from OneScreen for iPad.
+Keep your Mac and iPad on the same local network, or connect them with a USB or Ethernet cable, then start a stream from OneScreen for Mac and join it from OneScreen for iPad. With a cable plugged in, the video travels over the cable.
 
 ## Requirements
 
 - macOS 14.0 or later
-- OneScreen for iPad, on the same local network as the Mac
+- OneScreen for iPad, on the same local network as the Mac or connected to it by a USB or Ethernet cable
 - **Screen Recording** permission granted to OneScreen
 - **Local Network** access allowed for OneScreen
 - Optional: **Accessibility** permission for Keep Cursor Off Display, full screen helpers, and window placement
@@ -70,7 +70,7 @@ Keep your Mac and iPad on the same local network, then start a stream from OneSc
 5. Grant **Screen Recording** when prompted.
 6. Allow **Local Network** access when macOS asks.
 7. Install [NDI Tools](https://ndi.video/tools/) only if you intend to switch the streaming engine to NDI — skip it for HEVC.
-8. Keep your Mac and iPad on the same network.
+8. Keep your Mac and iPad on the same network, or connect them with a USB or Ethernet cable.
 
 ## First-Time Setup
 
@@ -100,7 +100,7 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 - **Integrations** — Capture One integration and supported companion actions
 - **Preview** — floating preview window behavior and appearance
 - **Intermission** — logo + text, title card, or solid color modes, animated GIFs, main and secondary displays, and a local Test mode
-- **Hotkeys** — keyboard shortcuts for live controls
+- **Shortcuts** — keyboard shortcuts for live controls
 - **Permissions** — Screen Recording, Accessibility, optional NDI runtime, and Capture One status
 - **License** — trial status and license management
 - **Updates / About / Help** — automatic and manual update checks, version info, support contact, and diagnostics

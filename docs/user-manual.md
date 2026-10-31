@@ -61,7 +61,7 @@ License checks, update checks, and user-triggered feedback may contact online se
 
 The menu bar panel is the center of the app. It is organized into a few main areas:
 
-- `Choose a display to stream`: use an existing display or create an iPad-sized virtual display.
+- `Choose a display to stream`: mirror an existing display or create an iPad-sized virtual display.
 - The lock control beside the display picker: switches between `Open Stream` and `Private Stream`.
 - `Preview`: shows a live preview while streaming, with the live controls and a stream-behavior gear below it.
 - `Receivers`: shows connected iPads and their controls.
@@ -72,7 +72,7 @@ If OneScreen shows a red warning instead of a Start button, fix that warning fir
 ## 4. Choose What to Stream
 
 1. Open the picker in the `Choose a display to stream` area.
-2. Choose a preset under `Create a Virtual Display` so OneScreen can create a virtual display when streaming starts, or choose a current Mac display under `Use an Existing Display`.
+2. Choose a preset under `Create a Virtual Display` so OneScreen can create a virtual display when streaming starts, or choose a current Mac display under `Mirror an Existing Display`.
 3. Each iPad preset opens a submenu. Choose what should appear on the virtual display:
    - Under `Choose a Window`, pick `Capture One Viewer`, a `Client Viewer`, or `Current App Window` to put a window there.
    - Under `Or Leave It Empty`, pick `Empty Display` to create the virtual display without moving a window onto it.
@@ -80,9 +80,9 @@ If OneScreen shows a red warning instead of a Start button, fix that warning fir
 
 ### When to use an existing Mac display
 
-Use the virtual display workflow when you want the iPad to behave like a dedicated presentation output. If you need to stream one of your current Mac displays instead, choose it from the `Use an Existing Display` section at the bottom of the display picker.
+Use the virtual display workflow when you want the iPad to behave like a dedicated presentation output. If you need to stream one of your current Mac displays instead, choose it from the `Mirror an Existing Display` section at the bottom of the display picker.
 
-A display that is mirroring another one is listed last, marked `(Mirrored Display)`, and cannot be chosen — it shows another display's picture rather than one of its own. Stream the display it mirrors instead, which stays selectable.
+A display that is mirroring another one is listed last, marked `(Mirroring Another Display)`, and cannot be chosen — it shows another display's picture rather than one of its own. Stream the display it mirrors instead, which stays selectable.
 
 ## 5. Choose Open or Private Streaming
 
@@ -173,6 +173,20 @@ The gear beside the live controls opens a `While Streaming` menu with two toggle
 
 Both stay available while the stream is live, and each greys out when the current display or window cannot support it.
 
+### Shot List and Moodboard
+
+The clipboard button left of the rotate button in the preview header holds two PDFs for the iPads: the shot list and the moodboard. Every connected iPad opens them from its own `Shot List` button, right of `Stream | Browse` (or of `Dashboard`) in the viewer.
+
+1. Click the clipboard button. Its menu has a section for each document: choose `Choose Shot List…` or `Choose Moodboard…`, then pick a PDF.
+2. OneScreen keeps its own copy of each PDF and sends it to every connected iPad. An iPad that joins later receives them when it connects, and keeps them, so opening is instant after that. A large PDF takes a while to cross the network the first time.
+3. On an iPad, tap `Shot List` to open the viewer. With both documents loaded, a `Shot List | Moodboard` toggle at the top picks which one is shown.
+4. The tools sit at the top right. On the shot list, the check and the cross mark a shot done or cancelled with a tap, and a tap on a mark removes it. On both documents, the pen and the highlighter draw with one finger (two fingers scroll), with five colours to choose from, and the eraser removes a line or a mark with a tap. Every iPad sees the same marks and lines.
+5. Each menu section also offers `Clear Marks and Highlights` and `Remove`, and `Replace…` once a document is loaded. A new PDF starts clean.
+
+To hide the shot list and the moodboard everywhere without removing them, turn off `Shot List` in `Settings > Tools`.
+
+The documents need no stream and no Capture One: iPads can mark them while the stream is paused, during an intermission, or with their controls locked. A PDF can be up to 250 MB. A password-protected PDF is refused.
+
 ### Rotate
 
 If the rotate button appears near the preview header, OneScreen supports rotating the selected display or recreating the current virtual iPad display in the other orientation.
@@ -220,7 +234,7 @@ These per-receiver controls are separate from the main stream Pause and Lock con
 
 ### Read each receiver's connection
 
-With `Connection Quality` on, every receiver row carries a set of signal bars and a subline showing that iPad's live data rate. The bars come from round-trip probes, so they read punctuality rather than raw throughput, and the subline stays quiet until something is worth reporting.
+With `Connection Quality in Receivers List` on, every receiver row carries a set of signal bars and a subline showing that iPad's live data rate. The bars come from round-trip probes, so they read punctuality rather than raw throughput, and the subline stays quiet until something is worth reporting.
 
 Each row also shows the receiver's battery according to the `Battery Display` setting — as an icon, as a percentage, or not at all.
 
@@ -230,21 +244,27 @@ If the framelines button appears in the `Receivers` header, click it to show or 
 
 ### Power Save
 
-If `Power Save` is enabled in Settings, a leaf button appears in the Receivers header.
+If `Power Save in Receivers List` is on in Settings, a leaf button appears in the Receivers header.
 
 1. Click the leaf to dim all connected iPads to the saved Power Save brightness.
 2. Click it again to restore each iPad's previous brightness.
 
 The button fills with the accent color while Power Save is on.
 
+Power Save dims an iPad only while it shows the live viewer. On the iPad's Dashboard the screen keeps its own brightness, and it dims again when you go back to the viewer.
+
+While Power Save dims an iPad, a leaf also appears in the top-right corner of that iPad's viewer. Tap it to bring that iPad back to its previous brightness; any other iPads stay dimmed. Once no iPad is left dimmed, Power Save turns itself off on the Mac.
+
+In the iPad's Control Deck, the same leaf sits in the top-right corner of the deck's picture.
+
 ### Activity banners
 
 When something on an iPad is holding the stream, a banner appears above the receiver list with a red button that ends it in one click:
 
-- `Live View is active on iPad` offers `Turn Off`, which turns off Live View in Capture One.
+- `Live View is active on the iPad` offers `Turn Off`, which turns off Live View in Capture One.
 - `Review mode is active` offers `Stop`, which ends the review sweep on every reviewing receiver.
 
-You don't have to open the menu to find out. When either one switches on while the menu is closed, the same banner drops from the OneScreen icon in the menu bar of the display the pointer is on. It stays until the mode ends, you click its button, you close it, or you open the menu, and it never takes focus from the app you are working in. While the Receivers window is open, its banners do the same job, so nothing drops from the menu bar. To stop the popup altogether, switch off `Review Mode or Live View Turns On` in `Settings > Receivers > Notifications`.
+You don't have to open the menu to find out. When either one switches on while the menu is closed, the same banner drops from the OneScreen icon in the menu bar of your main display. It hides itself after the `Auto-Dismiss` time in `Settings > Receivers > Notifications`, 10 seconds unless you change it, or sooner if the mode ends, you click its button, you close it, or you open the menu. With `Auto-Dismiss` set to `Never`, it stays until one of those happens. The banner in the menu stays for as long as the mode is on, so you can turn it off from there at any time. It never takes focus from the app you are working in. While the Receivers window is open, its banners do the same job, so nothing drops from the menu bar. To stop the popup altogether, switch off `Review Mode or Live View Turns On` in `Settings > Receivers > Notifications`.
 
 ## 10. Pop the Receivers List Into Its Own Window
 
@@ -284,7 +304,7 @@ The picker only appears when there is somewhere else to look — on a single-dis
 
 ## 12. Walk Through the Settings Tabs
 
-Open Settings from the gear button in the footer. The sidebar lists nine main tabs — General, Stream, Receivers, Integrations, Preview, Intermission, Shortcuts, Permissions, and License — plus Updates, About, and Help below them.
+Open Settings from the gear button in the footer. The sidebar lists nine main tabs — General, Stream, Receivers, Tools, Preview, Intermission, Shortcuts, Permissions, and License — plus Updates, About, and Help below them.
 
 ### General
 
@@ -295,11 +315,12 @@ App-level behavior:
 
 ### Stream
 
-Everything about the stream itself. While a stream is live these settings lock, and a banner explains that; stop the stream to edit them.
+Everything about the stream itself. While a stream is live, the settings under the `Stream` heading lock, all but `Sharpening`, and a banner explains that; stop the stream to edit them.
 
-- `Stream Name`: the name iPads see. Applies next time streaming starts.
+- `Stream Name`: the name iPads see. Applies the next time streaming starts.
 - `Streaming Engine`: HEVC or NDI, independent of quality. HEVC is the default, is built into macOS with nothing to install, and streams at a fixed data rate. NDI works with other NDI apps and requires the NDI Runtime, which comes with NDI Tools. Each engine remembers its own quality selection.
 - `Quality`: Maximum, High, Balanced, Limited Network, or Custom. The caption under the menu shows the exact size, frame rate, and (for HEVC) data rate.
+- `Sharpening` (HEVC only): Off, Low, Medium, or High; Low is the default. Gives the picture sent to iPads crisper text and edges, and Off sends the capture as it is. Unlike the settings around it, it stays open while streaming and applies to the next frame sent, so you can change it and judge the result on an iPad.
 - `Advanced`: `Stream Size` is a percentage of the streamed display (200 / 150 / 100 / 75 / 66 / 50 / 33%, with 150% and 200% offered only for a virtual iPad display, where they create real extra HiDPI pixels for clearer zooming); `Frame Rate` picks exact fps (60 / 30 / 20 / 15 / 10 / 8 / 5); HEVC adds a 20–120 Mbps `Data Rate` slider and an 8-bit/10-bit `Bit Depth` preference. Editing any of these sets Quality to Custom.
 - `Color Space`: Standard sRGB, Display P3 (the default), or ITU-R BT.709. NDI also offers Adobe RGB (1998); switching to HEVC with it selected changes the space to Display P3. A previously saved space outside this list stays selectable until changed where the engine supports it, and is otherwise replaced by Display P3.
 - `Stream Info`: the strip at the foot of the card showing exactly what will be sent — size, fps, engine, data rate, and bit depth (NDI reports `auto rate · 8-bit`). A green dot pulses while live.
@@ -307,7 +328,7 @@ Everything about the stream itself. While a stream is live these settings lock, 
 - `Virtual iPad Display`:
   - `Default Display Placement` chooses which side of the desktop a new virtual display is created on.
   - `Create Virtual Display in Portrait` creates the virtual iPad display in portrait when the stream starts.
-  - `Keep Other Windows off the Display` moves stray windows that land on the virtual display back to the main display.
+  - `Keep Other Windows off the Display` moves stray windows that land on the virtual display back to the main display. Popups always go, even while a stream is starting: macOS dialogs such as password, Touch ID and permission prompts, and alerts and notifications from menu bar apps, such as a firewall's connection alerts. With `Empty Display`, a window you drag onto the display stays where you put it, and so do the new windows that app opens there, such as a second window or a full-screen video; other windows that open there by themselves are moved.
 
 ### Receivers
 
@@ -317,21 +338,23 @@ Use this tab to shape the iPad experience:
 - `Show Display Rotation on iPad` adds the rotation button to the iPad viewer when this Mac can rotate the selected display
 - Enable and tune `Power Save`
 - `Battery Display` shows each receiver's battery as an icon, as a percentage, or not at all
-- `Connection Quality` shows each iPad's signal strength and live data rate in the receivers list while streaming
+- `Connection Quality in Receivers List` shows each iPad's signal strength and live data rate in the receivers list while streaming
 - `Enable Notifications` turns every receiver alert and the menu bar popup on or off at once. Switching it off also closes any popup alerts on screen; the settings under it are hidden while it is off and keep their choices for when you turn it back on
 - Turn `Battery Low or Not Charging`, `iPad Goes Offline`, and `Stream Drops Out` on or off (all three start on) — `Stream Drops Out` also announces when the receiver reconnects
 - `Alert Style` chooses how those alerts appear: `Popup` (the default) shows a floating OneScreen window — no notification permission needed, and it appears even over full-screen apps — while `Notification` uses macOS notifications
 - `Auto-Dismiss` (shown for the Popup style) lets popup alerts time out on their own, after 10 seconds unless you change it — `Never` keeps them up until you dismiss them
 - `Review Mode or Live View Turns On` controls the popup that drops from the menu bar icon when an iPad's review mode or Capture One Live View turns on during a stream (see Activity banners). It is on until you switch it off, and the banners in the menu and the Receivers window stay either way
 
-### Integrations
+### Tools
 
-Use this tab for optional Mac-side integrations:
+Use this tab for the two Capture One tools and the shot list:
 
 - Turn `Capture One Controls` on or off
-- Decide which controls are allowed from iPad, under `Selection and Camera Controls` (Navigation, Ratings, Color Tags, Camera Controls, AirDrop, Live View) and `Toolbar Buttons` (Clear Compare, Before/After, Overlay, Grid, Guides, Rotate Left, Rotate Right, Proof Margin, Viewer Background)
+- Click `Show` beside `Configure Capture One Controls` to decide which controls are allowed from iPad, under `Selection and Camera Controls` (Navigation, Ratings, Color Tags, Camera Controls, AirDrop, Live View) and `Toolbar Buttons` (Clear Compare, Before/After, Overlay, Grid, Guides, Rotate Left, Rotate Right, Proof Margin, Viewer Background)
 - `Proof Margin` and `Viewer Background` put two Capture One viewer tools in the toolbar at the top of the iPad's live viewer: a switch for Capture One's proof margin, and a menu of Capture One's six viewer background colors. Both appear on the iPad while the stream shows the Capture One Viewer or a Client Viewer: a Client Viewer shows whatever the main Capture One window's viewer is showing, so a press changes the picture either way. Each iPad can also hide either one in its own `Capture One Controls` settings
 - Review or change the Capture One target app bundle
+- Turn `Capture One Browser` on or off. It is an extension for Capture One's Live for Studio: while Capture One shares a session, iPads can browse its folders and full-size images, and rate and tag them, from `Browse` beside `Stream` in their viewer. The card says what is being shared, or how to start sharing in Capture One
+- Turn `Shot List` on or off (it starts on). It covers the moodboard as well. Off hides the clipboard button in the menu panel and the `Shot List` button on every iPad, and closes the shot list on any iPad that has it open. OneScreen keeps the PDFs and their marks, and they come back when you turn it on again
 
 ### Preview
 
@@ -438,6 +461,7 @@ App version and developer details, the OneScreen for iPad App Store link with a 
 - `Crash Reports` turns optional crash reporting on or off
 - `Detailed Diagnostic Logging` records extra stream and display detail for support; it takes effect after a relaunch and turns itself off after 3 days
 - `Diagnostic Logs` exports a local zip of logs if support asks for one
+- OneScreen always keeps a small connection log on this Mac, so a connection problem can be looked at after it has happened. It holds no picture content, network names, or addresses, and it is included in the `Diagnostic Logs` zip. See the Privacy Policy.
 - `User Manual`, `Privacy Policy`, `NDI Runtime`, and `Capture One` links
 - Shortcuts back to the `Permissions` and `License` tabs
 
@@ -502,13 +526,13 @@ When Keep Cursor Off Display is on, OneScreen also runs an automatic backup reco
 
 ### An iPad shows weak signal or a stuttering picture
 
-Turn on `Settings > Receivers > Connection Quality` and watch that receiver's bars and data-rate subline. If the bars drop on a busy network, lower `Quality` — or, under `Advanced`, lower `Data Rate` or `Frame Rate` — and start the stream again.
+Turn on `Settings > Receivers > Connection Quality in Receivers List` and watch that receiver's bars and data-rate subline. If the bars drop on a busy network, lower `Quality` — or, under `Advanced`, lower `Data Rate` or `Frame Rate` — and start the stream again.
 
 ### Capture One controls are unavailable
 
 Check these items:
 
-1. `Settings > Integrations > Capture One Controls` is turned on.
+1. `Settings > Tools > Capture One Controls` is turned on.
 2. Capture One is running.
 3. `Settings > Permissions > Capture One` shows a good AppleScript and Automation state. Accessibility only affects window placement/full screen helpers.
 4. The correct Capture One app bundle is selected if you have multiple installs.

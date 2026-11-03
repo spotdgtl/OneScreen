@@ -21,6 +21,8 @@ It describes OneScreen 1.0.3 (55).
 3. Click the menu bar icon to open the main control panel.
 4. If the `Welcome to OneScreen for Mac` setup sheet appears, complete the next section before trying to start a stream.
 
+The dot on the icon tells you what the Mac is doing: red while nothing streams, blue while Capture One shares a session through the Capture One Browser and nothing streams, green while a stream runs, and orange while a stream starts, is paused, or is in Intermission. An iPad with a number beside the icon counts the iPads watching the stream or browsing the Capture One Browser share. An iPad that is connected but back on its Dashboard is listed under Receivers and not counted. `Settings > Receivers > iPad Count in Menu Bar` turns the number off. Hover the icon for a tooltip that names the stream or the share.
+
 OneScreen is a menu bar app, so closing the panel does not quit it. Use the `Quit` button in the footer when you want to fully exit the app. By default, OneScreen stays out of the Dock and may also stay out of the macOS Force Quit Applications window. To show it in both places while it is running, turn on `Settings > General > Show Icon in Dock`.
 
 ## 2. Complete First-Time Setup
@@ -340,7 +342,7 @@ Use this tab to shape the iPad experience:
 - `Battery Display` shows each receiver's battery as an icon, as a percentage, or not at all
 - `Connection Quality in Receivers List` shows each iPad's signal strength and live data rate in the receivers list while streaming
 - `Enable Notifications` turns every receiver alert and the menu bar popup on or off at once. Switching it off also closes any popup alerts on screen; the settings under it are hidden while it is off and keep their choices for when you turn it back on
-- Turn `Battery Low or Not Charging`, `iPad Goes Offline`, and `Stream Drops Out` on or off (all three start on) — `Stream Drops Out` also announces when the receiver reconnects
+- Turn `Battery Low or Not Charging`, `iPad Goes Offline`, and `Stream Drops Out` on or off (all three start on) — `Stream Drops Out` also announces when the receiver reconnects, and `iPad Goes Offline` says the iPad left the stream, rather than disconnected, when Disconnect was tapped on the iPad
 - `Alert Style` chooses how those alerts appear: `Popup` (the default) shows a floating OneScreen window — no notification permission needed, and it appears even over full-screen apps — while `Notification` uses macOS notifications
 - `Auto-Dismiss` (shown for the Popup style) lets popup alerts time out on their own, after 10 seconds unless you change it — `Never` keeps them up until you dismiss them
 - `Review Mode or Live View Turns On` controls the popup that drops from the menu bar icon when an iPad's review mode or Capture One Live View turns on during a stream (see Activity banners). It is on until you switch it off, and the banners in the menu and the Receivers window stay either way
@@ -536,6 +538,16 @@ Check these items:
 2. Capture One is running.
 3. `Settings > Permissions > Capture One` shows a good AppleScript and Automation state. Accessibility only affects window placement/full screen helpers.
 4. The correct Capture One app bundle is selected if you have multiple installs.
+
+### Browse is missing pictures from a folder
+
+If a session is closed or switched in Capture One while its share is still loading, Capture One can leave whole folders out of the share until it is restarted. To avoid this, let a newly shared session load for a few minutes before you close it or switch to another.
+
+OneScreen puts missing folders back by itself. Once the share has settled, OneScreen runs Capture One's Sync Metadata command on each folder that came up short, one folder at a time. On a large session this can take a while. In the meantime the iPad keeps showing the pictures it has already saved.
+
+Sync Metadata writes each picture's metadata to disk. It adds a small sidecar file (.xmp) next to each picture and rewrites each EIP file in place. The picture and adjustments inside an EIP don't change, but the file gets a new modified date, so backup and sync tools copy the whole file again.
+
+Output and Selects folders hold the files you hand over, so OneScreen never runs Sync Metadata on them. Instead, once the other folders are done, OneScreen has Capture One read each picture's metadata back from its file. That writes nothing to the JPEGs, and OneScreen puts back any stars and colour tags the read changed. EIP files there are saved again, as in capture folders.
 
 ## Suggested Daily Workflow
 

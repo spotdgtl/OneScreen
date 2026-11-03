@@ -23,7 +23,8 @@ OneScreen is a Mac app that streams an existing display or virtual iPad-sized di
 - **Inline stream controls** to pause, resume, trigger an intermission screen, lock the receivers, or rotate the display — plus Keep Cursor Off Display and Keep Window Full Screen from the stream behavior menu.
 - **Floating Preview window** that mirrors what the iPad is currently showing, so you don't have to look at the receiver to check the output.
 - **Manage connected iPads from the Mac**, including custom names and color labels, brightness, display profile selection and profile sync, framelines control, identify, return-to-live, per-receiver pause, and per-receiver lock.
-- **See how every iPad is actually doing** — signal strength and live data rate per receiver, plus battery, right in the receivers list.
+- **See how every iPad is actually doing** — signal strength and live data rate per receiver, plus battery, whether it's watching the stream or browsing, and which folder it has open, right in the receivers list. The iPads browsing with Capture One Browser are listed before a stream starts, too.
+- **The menu bar icon keeps count** of the iPads watching or browsing, and its dot turns blue while Capture One is sharing but nothing is streaming.
 - **Pop the receivers list into a floating window** that stays on top and carries its own pause, intermission, and lock controls, so you can work away from the menu bar.
 - **One-click exits from anything holding the stream**, with banners for Capture One Live View and iPad review mode that drop from the menu bar icon, so you don't need the menu open.
 - **Power Save** dims all of the connected receivers to extend iPad battery life during down time with the press of a button, and restores them on demand — or tap the leaf on one iPad to wake just that one.
@@ -36,8 +37,8 @@ OneScreen is a Mac app that streams an existing display or virtual iPad-sized di
 - **Stream Deck plugin**, installed from Settings > Shortcuts, puts OneScreen's shortcut commands on Stream Deck keys, and each key lights up while its control is on (Stream Deck app 7.1 or later).
 - **Capture One Controls integration** iPad companion actions like navigation, ratings, color tags, camera controls, capture button, AirDrop, Live View, overlays, grid, guides, clear compare, and image rotation toggles.
 - **Control Deck** turns the iPad into a control surface beside your primary monitor to rate, tag, and review captures — with a live preview thumbnail and per-shot EXIF and exposure info (part of Capture One Controls).
-- **Capture One Browser** lets every iPad browse a Capture One Studio session shared with Live for Studio — folders and full-size pictures, star ratings and color tags, and new captures as they come in — with or without a stream (a separate purchase in OneScreen for iPad).
-- **Shot list and moodboard** — share a PDF from the menu bar, and every iPad can open it, check off and mark up shots, and see the same marks as everyone else.
+- **Capture One Browser** lets every iPad browse a Capture One Studio session shared with Live for Studio — folders and full-size pictures, star ratings and color tags, each picture's shutter speed, aperture, ISO and focal length at a tap, and new captures as they come in — with or without a stream (a separate purchase in OneScreen for iPad). If Capture One stops sharing some of the session's folders, OneScreen notices and brings them back on its own.
+- **Shot list and moodboard** — share a PDF from the menu bar, before or during a stream, and every iPad can open it, check off and mark up shots, and see the same marks as everyone else.
 
 ## Trial and Licensing
 
@@ -51,7 +52,7 @@ The iPad app carries the live viewer, a stream dashboard for switching between M
 
 To use the Capture One companion features, purchase and enable `Capture One Controls` inside OneScreen for iPad. This also unlocks the **Control Deck**, which turns the iPad into a control surface beside your primary monitor for rating, tagging, and reviewing captures.
 
-**Capture One Browser** is a separate purchase in OneScreen for iPad. With Live for Studio sharing on in Capture One Studio, the iPad browses the session's folders and pictures, rates and color-tags them, and follows new captures, with or without a stream.
+**Capture One Browser** is a separate purchase in OneScreen for iPad. With Live for Studio sharing on in Capture One Studio, the iPad browses the session's folders and pictures, rates and color-tags them, and follows new captures, with or without a stream. It keeps the session's pictures on the iPad — up to 128 GB, with a ring and a count that show caching as it happens — so folders open at once, and a folder Capture One is still loading or repairing shows the pictures you've already seen.
 
 Keep your Mac and iPad on the same local network, or connect them with a USB or Ethernet cable, then start a stream from OneScreen for Mac and join it from OneScreen for iPad. With a cable plugged in, the video travels over the cable.
 
@@ -72,7 +73,7 @@ Keep your Mac and iPad on the same local network, or connect them with a USB or 
 2. Move `OneScreen.app` to `/Applications`.
 3. Launch it from `/Applications`, Launchpad, or Spotlight.
 4. Complete the first-run setup inside the app.
-5. Grant **Screen Recording** when prompted.
+5. Grant **Screen Recording** when prompted. If macOS puts the request on the display you're streaming, OneScreen lets you know on your own screen.
 6. Allow **Local Network** access when macOS asks.
 7. Install [NDI Tools](https://ndi.video/tools/) only if you intend to switch the streaming engine to NDI — skip it for HEVC.
 8. Keep your Mac and iPad on the same network, or connect them with a USB or Ethernet cable.
@@ -101,7 +102,7 @@ If any change still requires a relaunch, OneScreen will tell you in-app.
 
 - **General** — open at login and Dock icon visibility
 - **Stream** — streaming engine (HEVC or NDI), stream name, quality presets or custom size, frame rate, data rate and bit depth, color space, sharpening, auto-start and auto-switch behavior, and virtual iPad display placement, orientation, and stray-window handling
-- **Receivers** — name presets, iPad viewer controls, Power Save, battery and connection-quality readouts, receiver alerts
+- **Receivers** — name presets, iPad viewer controls, Power Save, battery and connection-quality readouts, the iPad count in the menu bar, receiver alerts
 - **Tools** — Capture One Controls and the companion actions they allow, Capture One Browser, and the Shot List switch
 - **Preview** — floating preview window behavior and appearance
 - **Intermission** — logo + text, title card, or solid color modes, animated GIFs, main and secondary displays, and a local Test mode

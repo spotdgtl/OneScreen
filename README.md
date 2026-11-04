@@ -43,8 +43,6 @@ OneScreen is a Mac app that streams an existing display or virtual iPad-sized di
 
 OneScreen includes a 3-day free trial with full streaming on each Mac. You can [purchase a license](https://spotdgtl.lemonsqueezy.com/checkout/buy/d192eedf-4770-4e21-bb20-bfbb37f82aeb?discount=0) to keep using the Mac app after the trial.
 
-If you want to test longer before purchasing, email [graham@spotdgtl.com](mailto:graham@spotdgtl.com) for an extended trial license. License activation, validation, revalidation, and removal are all handled in **Settings > License**.
-
 ## OneScreen for iPad
 
 OneScreen for iPad is available on the App Store: [download OneScreen for iPad](https://apps.apple.com/us/app/onescreen-for-ipad/id6761702167) on the iPad you want to stream to. The Mac app's **Settings > About** also shows a QR code you can point the iPad's camera at to open the listing directly.

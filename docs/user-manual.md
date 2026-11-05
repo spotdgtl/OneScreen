@@ -177,17 +177,17 @@ Both stay available while the stream is live, and each greys out when the curren
 
 ### Shot List and Moodboard
 
-The clipboard button left of the rotate button in the preview header holds two PDFs for the iPads: the shot list and the moodboard. Every connected iPad opens them from its own `Shot List` button, right of `Stream | Browse` (or of `Dashboard`) in the viewer.
+The clipboard button left of the rotate button in the preview header holds two documents for the iPads: the shot list and the moodboard. Each is a PDF, or a JPEG or PNG picture, which OneScreen turns into a one-page PDF. Every connected iPad opens them from its own `Shot List` button, right of `Stream | Browse` (or of `Dashboard`) in the viewer.
 
-1. Click the clipboard button. Its menu has a section for each document: choose `Choose Shot List…` or `Choose Moodboard…`, then pick a PDF.
-2. OneScreen keeps its own copy of each PDF and sends it to every connected iPad. An iPad that joins later receives them when it connects, and keeps them, so opening is instant after that. A large PDF takes a while to cross the network the first time.
+1. Click the clipboard button. Its menu has a section for each document: choose `Choose Shot List…` or `Choose Moodboard…`, then pick a PDF, JPEG or PNG.
+2. OneScreen keeps its own copy of each document and sends it to every connected iPad. An iPad that joins later receives them when it connects, and keeps them, so opening is instant after that. A large PDF takes a while to cross the network the first time.
 3. On an iPad, tap `Shot List` to open the viewer. With both documents loaded, a `Shot List | Moodboard` toggle at the top picks which one is shown.
 4. The tools sit at the top right. On the shot list, the check and the cross mark a shot done or cancelled with a tap, and a tap on a mark removes it. On both documents, the pen and the highlighter draw with one finger (two fingers scroll), with five colours to choose from, and the eraser removes a line or a mark with a tap. Every iPad sees the same marks and lines.
 5. Each menu section also offers `Clear Marks and Highlights` and `Remove`, and `Replace…` once a document is loaded. A new PDF starts clean.
 
 To hide the shot list and the moodboard everywhere without removing them, turn off `Shot List` in `Settings > Tools`.
 
-The documents need no stream and no Capture One: iPads can mark them while the stream is paused, during an intermission, or with their controls locked. A PDF can be up to 250 MB. A password-protected PDF is refused.
+The documents need no stream and no Capture One: iPads can mark them while the stream is paused, during an intermission, or with their controls locked. A document can be up to 250 MB. A password-protected PDF is refused.
 
 ### Rotate
 

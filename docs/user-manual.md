@@ -63,17 +63,17 @@ License checks, update checks, and user-triggered feedback may contact online se
 
 The menu bar panel is the center of the app. It is organized into a few main areas:
 
-- `Choose a display to stream`: mirror an existing display or create an iPad-sized virtual display.
+- `Choose a Display to Stream`: the display card. Its picker creates a virtual display optimized for your iPad or mirrors an existing display. Before a stream the card also holds `Keep Cursor Off Display` and `Keep Window Full Screen`, each shown only when the chosen display can use it: `Keep Cursor Off Display` on a secondary display, `Keep Window Full Screen` on a virtual iPad display.
 - The lock control beside the display picker: switches between `Open Stream` and `Private Stream`.
 - `Preview`: shows a live preview while streaming, with the live controls and a stream-behavior gear below it.
 - `Receivers`: shows connected iPads and their controls.
-- Footer: `Settings`, `About OneScreen` (this becomes `Check for Updates` when an update is waiting), `Quit`, and the `Start` / `Stop` button.
+- Footer: `Settings`, `About OneScreen` (this becomes `Check for Updates` when an update is waiting), the clipboard button for the shot list and the moodboard, `Quit`, and the `Start` / `Stop` button.
 
 If OneScreen shows a red warning instead of a Start button, fix that warning first. The app will not start streaming until the required setup is complete.
 
 ## 4. Choose What to Stream
 
-1. Open the picker in the `Choose a display to stream` area.
+1. Open the picker under `Choose a Display to Stream`.
 2. Choose a preset under `Create a Virtual Display` so OneScreen can create a virtual display when streaming starts, or choose a current Mac display under `Mirror an Existing Display`.
 3. Each iPad preset opens a submenu. Choose what should appear on the virtual display:
    - Under `Choose a Window`, pick `Capture One Viewer`, a `Client Viewer`, or `Current App Window` to put a window there.
@@ -132,7 +132,7 @@ Over HEVC the status pill also shows the measured send rate for the live stream.
 
 OneScreen holds the Mac awake for as long as a stream is running, so the machine will not idle-sleep mid-session and drop every receiver at once. With `Keep Screen Awake` on (the default), the screen also stays awake while an iPad is watching: macOS stops the capture the moment the screen sleeps, so a stream whose screen has gone dark can send only the intermission card until it wakes. An explicit sleep — closing the lid, a hot corner, or the Apple menu — still wins; the stream then holds on the intermission card and the picture returns when the Mac or its screen wakes.
 
-If you need to change the selected display, streaming engine, quality, or color space, stop the stream first, make the change, then start again. Those settings lock while a stream is live and the Stream tab shows a banner explaining why.
+If you need to change the selected display, streaming engine, preset, or color space, stop the stream first, make the change, then start again. Those settings lock while a stream is live and the Stream tab shows a banner explaining why.
 
 ## 7. Connect and Use an iPad Receiver
 
@@ -177,7 +177,7 @@ Both stay available while the stream is live, and each greys out when the curren
 
 ### Shot List and Moodboard
 
-The clipboard button left of the rotate button in the preview header holds two documents for the iPads: the shot list and the moodboard. Each is a PDF, or a JPEG or PNG picture, which OneScreen turns into a one-page PDF. Every connected iPad opens them from its own `Shot List` button, right of `Stream | Browse` (or of `Dashboard`) in the viewer.
+The clipboard button in the footer, right of `About OneScreen`, holds two documents for the iPads: the shot list and the moodboard. It is there before and during a stream. Each is a PDF, or a JPEG or PNG picture, which OneScreen turns into a one-page PDF. Every connected iPad opens them from its own `Shot List` button, right of `Stream | Browse` (or of `Dashboard`) in the viewer.
 
 1. Click the clipboard button. Its menu has a section for each document: choose `Choose Shot List…` or `Choose Moodboard…`, then pick a PDF, JPEG or PNG.
 2. OneScreen keeps its own copy of each document and sends it to every connected iPad. An iPad that joins later receives them when it connects, and keeps them, so opening is instant after that. A large PDF takes a while to cross the network the first time.
@@ -185,7 +185,7 @@ The clipboard button left of the rotate button in the preview header holds two d
 4. The tools sit at the top right. On the shot list, the check and the cross mark a shot done or cancelled with a tap, and a tap on a mark removes it. On both documents, the pen and the highlighter draw with one finger (two fingers scroll), with five colours to choose from, and the eraser removes a line or a mark with a tap. Every iPad sees the same marks and lines.
 5. Each menu section also offers `Clear Marks and Highlights` and `Remove`, and `Replace…` once a document is loaded. A new PDF starts clean.
 
-To hide the shot list and the moodboard everywhere without removing them, turn off `Shot List` in `Settings > Tools`.
+To hide the shot list and the moodboard everywhere without removing them, turn off `Shot List & Moodboard` in `Settings > Tools`.
 
 The documents need no stream and no Capture One: iPads can mark them while the stream is paused, during an intermission, or with their controls locked. A document can be up to 250 MB. A password-protected PDF is refused.
 
@@ -220,19 +220,31 @@ Each connected iPad receiver gets its own row in the `Receivers` section.
 1. Click the broadcast-style identify button.
 2. OneScreen tells that iPad to identify itself so you know which device you are controlling.
 
-### Return a receiver to live view
-
-1. Click the live-view button on a receiver row.
-2. OneScreen reopens the live view on that iPad.
-
-The button greys out while that iPad is already in the live view.
-
 ### Pause or lock a single receiver
 
 1. Use the play/pause button to pause or resume just that receiver.
 2. Use the lock button to lock or unlock just that receiver.
 
 These per-receiver controls are separate from the main stream Pause and Lock controls.
+
+### Link a receiver to your Mac
+
+Linking puts one iPad's `Browse` and Capture One on the same image. The iPad shows the image selected in Capture One, full screen, and moves to each image you select. The person holding the iPad can drive too: a swipe, the film strip or a tap on an image in the grid selects that image in Capture One, so your viewer, the stream and any other linked iPad go to it.
+
+1. On the row of an iPad that is in `Browse`, click the link button.
+2. Click it again to unlink that iPad.
+
+To link every iPad in `Browse` at once, click the link button at the right of the `Receivers` heading, or press the `Link / Unlink iPads in Browse` shortcut. When every one of them is already linked, the same click or press unlinks them all.
+
+The link button is on the rows of iPads on the Capture One share, before a stream starts and while one runs. Each iPad is linked on its own, and OneScreen remembers the choice for that iPad until you unlink it. It needs only the `Capture One Browser`: it works with `Capture One Controls` off, and on an iPad that has not bought them. A linked iPad can only choose the image; ratings, color tags and the camera keep their own rules.
+
+To let a linked iPad watch without driving, lock it with the lock button on its row. When two or more iPads are linked they take turns, as in the stream viewer: the one swiping holds control, the others read `In Use`, and control is free six seconds after its last swipe.
+
+On the iPad, the `Follow` button becomes a link that reads `Linked`. It cannot be switched off from the iPad, and it ends by itself if the iPad stops hearing from the Mac for ten seconds. Opening another folder there changes nothing in Capture One until an image is opened.
+
+A linked iPad shows the selected image, not Capture One's viewer: zoom, compare and Live View are still on the stream. An image the iPad has not loaded yet takes a moment to appear.
+
+Before a stream starts, each iPad's row also carries the `Find this iPad` and lock buttons.
 
 ### Read each receiver's connection
 
@@ -320,11 +332,12 @@ App-level behavior:
 Everything about the stream itself. While a stream is live, the settings under the `Stream` heading lock, all but `Sharpening`, and a banner explains that; stop the stream to edit them.
 
 - `Stream Name`: the name iPads see. Applies the next time streaming starts.
-- `Streaming Engine`: HEVC or NDI, independent of quality. HEVC is the default, is built into macOS with nothing to install, and streams at a fixed data rate. NDI works with other NDI apps and requires the NDI Runtime, which comes with NDI Tools. Each engine remembers its own quality selection.
-- `Quality`: Maximum, High, Balanced, Limited Network, or Custom. The caption under the menu shows the exact size, frame rate, and (for HEVC) data rate.
-- `Sharpening` (HEVC only): Off, Low, Medium, or High; Low is the default. Gives the picture sent to iPads crisper text and edges, and Off sends the capture as it is. Unlike the settings around it, it stays open while streaming and applies to the next frame sent, so you can change it and judge the result on an iPad.
-- `Advanced`: `Stream Size` is a percentage of the streamed display (200 / 150 / 100 / 75 / 66 / 50 / 33%, with 150% and 200% offered only for a virtual iPad display, where they create real extra HiDPI pixels for clearer zooming); `Frame Rate` picks exact fps (60 / 30 / 20 / 15 / 10 / 8 / 5); HEVC adds a 20–120 Mbps `Data Rate` slider and an 8-bit/10-bit `Bit Depth` preference. Editing any of these sets Quality to Custom.
-- `Color Space`: Standard sRGB, Display P3 (the default), or ITU-R BT.709. NDI also offers Adobe RGB (1998); switching to HEVC with it selected changes the space to Display P3. A previously saved space outside this list stays selectable until changed where the engine supports it, and is otherwise replaced by Display P3.
+- `Streaming Engine`: HEVC or NDI. HEVC is the default, is built into macOS with nothing to install, and streams at a fixed data rate. NDI works with other NDI apps and requires the NDI Runtime, which comes with NDI Tools. Each engine remembers its own preset.
+- `Preset`: Strong Network, Typical Network, Limited Network, or Custom, named for the network each suits. The caption under the menu shows the exact size, frame rate, and (for HEVC) data rate. On HEVC all three send the display at its full size: Strong Network at 100 Mbps and 30 fps, Typical Network (the default) at 80 Mbps and 30 fps, and Limited Network at 40 Mbps and 15 fps. On NDI, Typical Network and Limited Network also make the picture smaller.
+- `Zoom Detail` (virtual iPad display only): sends twice the pixels, so pinching in on an iPad shows better detail. It takes more of the Mac's power and works with every HEVC preset. On NDI, Typical Network and Limited Network limit the stream's size, and the row says so; choose Strong Network to send the extra pixels.
+- `Sharpening`: Off, Low, Medium, or High; Low is the default. Makes edges stronger than in the original, so the picture looks crisper on iPads. Off is the most accurate and sends the capture as it is. Unlike the settings around it, it stays open while streaming and applies to the next frame sent, so you can change it and judge the result on an iPad.
+- `Advanced`: `Frame Rate` picks exact fps (60 / 30 / 20 / 15); HEVC adds `Data Rate` (120 / 100 / 80 / 60 / 40 / 20 Mbps) and an 8-bit/10-bit `Bit Depth` preference. More data gets the picture sharp again sooner after it changes; too much for your network causes stutter. `Stream Size`, a percentage of the streamed display (100 / 75 / 66 / 50 / 33%), appears when you stream an existing display or use NDI; HEVC always sends a virtual iPad display at its full size. Editing size, frame rate, or data rate sets Preset to Custom. A saved value that is no longer offered stays in its menu until you change it.
+- `Color Space` (under `Advanced`): Standard sRGB, Display P3 (the default), or ITU-R BT.709. NDI also offers Adobe RGB (1998); switching to HEVC with it selected changes the space to Display P3. A previously saved space outside this list stays selectable until changed where the engine supports it, and is otherwise replaced by Display P3.
 - `Stream Info`: the strip at the foot of the card showing exactly what will be sent — size, fps, engine, data rate, and bit depth (NDI reports `auto rate · 8-bit`). A green dot pulses while live.
 - `Streaming Behavior`: `Auto-Start Stream` (with `Use Private Stream` pairing), `Auto-Switch Displays` if the streamed display disappears, and `Keep Screen Awake`, which stops the screen sleeping on its own while an iPad is watching.
 - `Virtual iPad Display`:
@@ -352,11 +365,13 @@ Use this tab to shape the iPad experience:
 Use this tab for the two Capture One tools and the shot list:
 
 - Turn `Capture One Controls` on or off
-- Click `Show` beside `Configure Capture One Controls` to decide which controls are allowed from iPad, under `Selection and Camera Controls` (Navigation, Ratings, Color Tags, Camera Controls, AirDrop, Live View) and `Toolbar Buttons` (Clear Compare, Before/After, Overlay, Grid, Guides, Rotate Left, Rotate Right, Proof Margin, Viewer Background)
+- Click `Show` beside `Configure Capture One Controls` to decide which controls are allowed from iPad, under `Selection and Camera Controls` (Navigation, Ratings, Color Tags, Camera Controls) and `Toolbar Buttons` (AirDrop, Live View, Before/After, Clear Compare, Overlay, Grid, Guides, Rotate Left, Rotate Right, Proof Margin, Viewer Background)
 - `Proof Margin` and `Viewer Background` put two Capture One viewer tools in the toolbar at the top of the iPad's live viewer: a switch for Capture One's proof margin, and a menu of Capture One's six viewer background colors. Both appear on the iPad while the stream shows the Capture One Viewer or a Client Viewer: a Client Viewer shows whatever the main Capture One window's viewer is showing, so a press changes the picture either way. Each iPad can also hide either one in its own `Capture One Controls` settings
 - Review or change the Capture One target app bundle
-- Turn `Capture One Browser` on or off. It is an extension for Capture One's Live for Studio: while Capture One shares a session, iPads can browse its folders and full-size images, and rate and tag them, from `Browse` beside `Stream` in their viewer. The card says what is being shared, or how to start sharing in Capture One
-- Turn `Shot List` on or off (it starts on). It covers the moodboard as well. Off hides the clipboard button in the menu panel and the `Shot List` button on every iPad, and closes the shot list on any iPad that has it open. OneScreen keeps the PDFs and their marks, and they come back when you turn it on again
+- Turn `Capture One Browser` on or off. It is an extension for Capture One's Live for Studio: while Capture One shares a session, iPads can browse its folders and full-size images, and rate and tag them, from `Browse` beside `Stream` in their viewer. The card says what is being shared, or how to start sharing in Capture One. It has its own switch: Browse works with `Capture One Controls` on or off
+- Open `Configure Capture One Browser` to decide what Browse may do on iPads: `Ratings`, `Color Tags` and `AirDrop`. `AirDrop` covers every way a picture leaves Browse: the AirDrop button on an open picture, the AirDrop button in the GIF player, and `Share` on a selection
+- To stop iPads sending pictures out with AirDrop, turn `AirDrop` off in both places: under `Configure Capture One Controls` for the live stream, and under `Configure Capture One Browser` for Browse. Both start on. Off, no iPad shows that AirDrop button, whatever its own settings say, and the iPad's own `AirDrop` switch reads `Off on Mac`. An iPad that leaves the Mac, or loses its connection, keeps to what the Mac last said until a Mac says otherwise. iPads must be up to date to follow these two switches: an older version of OneScreen for iPad keeps its AirDrop buttons. Neither switch can stop a screenshot taken on the iPad itself
+- Turn `Shot List & Moodboard` on or off (it starts on). Off hides the clipboard button in the menu panel and the `Shot List` button on every iPad, and closes the shot list on any iPad that has it open. OneScreen keeps the PDFs and their marks, and they come back when you turn it on again
 
 ### Preview
 
@@ -430,6 +445,18 @@ Assign keyboard shortcuts for:
 - Power Save
 - Framelines
 - Recall Cursor to Main Display
+- Stop Review Mode
+- Start / Stop Live View on iPad
+- Trigger Follow on iPad
+- Link / Unlink iPads in Browse
+
+`Start / Stop Live View on iPad` opens Capture One Live View for the iPads, or turns it off when it is already on. `Trigger Follow on iPad` does what `Trigger Follow` in Capture One's Live for Studio tool does: every iPad in Browse goes to the picture Capture One is on. `Link / Unlink iPads in Browse` links every iPad in Browse to your Mac, or unlinks them all when every one is already linked.
+
+Every shortcut starts with a key, and you can change or clear any of them. The first eight use `⌃⌥⌘` with `P`, `I`, `O`, `F`, `L`, `S`, `R` and `M`, in the order listed. `Stop Review Mode` is `⌃⌥⌘E`, `Start / Stop Live View on iPad` is `⌃⌥⌘V`, `Trigger Follow on iPad` is `⌃⌥⌘T`, and `Link / Unlink iPads in Browse` is `⌃⌥⌘K`. A shortcut you clear stays cleared. If you had already given one of those last four combos to another shortcut before updating, your choice is kept and the new one starts with no key.
+
+`Start / Stop Live View on iPad` used to be two shortcuts. It keeps the key you chose for Start, or the one you chose for Stop if you only set that. A `Stop Live View on iPad` key already on your Stream Deck still turns Live View off; the plugin now offers the one `Start / Stop Live View on iPad` key.
+
+`Stream Deck`, under the shortcut rows, installs OneScreen's plugin for the Stream Deck app (7.1 or later). Each of its keys runs one of these commands, and a key lights up while its control is on.
 
 ### Permissions
 
@@ -528,7 +555,7 @@ When Keep Cursor Off Display is on, OneScreen also runs an automatic backup reco
 
 ### An iPad shows weak signal or a stuttering picture
 
-Turn on `Settings > Receivers > Connection Quality in Receivers List` and watch that receiver's bars and data-rate subline. If the bars drop on a busy network, lower `Quality` — or, under `Advanced`, lower `Data Rate` or `Frame Rate` — and start the stream again.
+Turn on `Settings > Receivers > Connection Quality in Receivers List` and watch that receiver's bars and data-rate subline. If the bars drop on a busy network, choose a lighter `Preset` — or, under `Advanced`, lower `Data Rate` or `Frame Rate` — and start the stream again.
 
 ### Capture One controls are unavailable
 
